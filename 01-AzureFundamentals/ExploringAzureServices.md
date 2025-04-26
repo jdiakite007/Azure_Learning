@@ -18,8 +18,8 @@ Azure offre une vaste gamme de services conçus pour répondre aux divers besoin
 
 Sur Microsoft Azure, il existe quatre grands types de services de stockage, chacun adapté à des besoins différents.
 
-1. Blob Storage (Stockage d’objets)
-✅ Idéal pour : Stocker des fichiers non structurés,telles que des images, desvidéos, des PDF,des sauvegardes etc.    
+1. Blob Storage (Stockage d’objets)      
+✅ Idéal pour : Stocker des fichiers non structurés, telles que des images, desvidéos, des PDF,des sauvegardes etc.    
 📌 Exemples :
 Sauvegarder des vidéos d'une caméra de surveillance.   
 Stocker des images pour un site web.    
