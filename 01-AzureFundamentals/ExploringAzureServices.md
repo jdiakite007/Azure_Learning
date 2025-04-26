@@ -21,18 +21,16 @@ L’usage (web, dev, bases de données, etc.)
 Tu veux tester un logiciel sur Windows Server ou Ubuntu ?
 💡 Crée une VM dans Azure, connecte-toi à distance via RDP ou SSH, et installe ce que tu veux.
 
-🔹 2. **Azure App Service**:Un service pour deployer et pour héberger des applications web, des API ou des sites, sans avoir à gérer le serveur.
-✅ Supporte :
-Langages : .NET, Java, Node.js, PHP, Python, Ruby
-📌 Exemple concret :
+2. **Azure App Service**:Un service pour deployer et pour héberger des applications web, des API ou des sites, sans avoir à gérer le serveur.Langages supportés: .NET, Java, Node.js, PHP, Python, Ruby
+📌 Exemple concret :    
 Tu développes un petit site web en Python ou une API en Node.js.
 💡 Tu déploies ton code directement sur Azure App Service. Azure s’occupe du reste (serveur, OS, patchs...).
 
 🔹 3. **Azure Functions (Serverless)**: 
-Un servcie pour exécuter des extraits de code en réponse à des événements
+Un servcie pour exécuter des extraits de code en réponse à des événements    
 Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.
-✅ Idéal pour :
-Tâches simples ou automatiques
+✅ Idéal pour :    
+Tâches simples ou automatiques   
 Événements déclenchés par des uploads, des messages, des planifications (cron)
 📌 Exemple concret :
 À chaque fois qu’un fichier est ajouté dans Azure Blob Storage, tu veux analyser son contenu.
@@ -40,9 +38,6 @@ Tâches simples ou automatiques
 
 🔹 4. **Azure Container Instances (ACI)**: 
 Un service pour exécuter un conteneur Docker en quelques secondes, sans gérer un serveur.
-✅ Points forts :
-Super rapide à lancer
-Idéal pour des traitements courts ou ponctuels
 Pratique pour tester des images Docker
 📌 Exemple concret :
 Tu veux tester un microservice que tu as empaqueté dans un conteneur Docker.
