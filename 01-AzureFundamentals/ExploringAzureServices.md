@@ -19,26 +19,26 @@ Azure offre une vaste gamme de services conçus pour répondre aux divers besoin
 Sur Microsoft Azure, il existe quatre grands types de services de stockage, chacun adapté à des besoins différents.
 
 1. Blob Storage (Stockage d’objets)
-✅ Idéal pour : Stocker des fichiers non structurés,telles que des images, desvidéos, des PDF,des sauvegardes etc.
+✅ Idéal pour : Stocker des fichiers non structurés,telles que des images, desvidéos, des PDF,des sauvegardes etc.    
 📌 Exemples :
-Sauvegarder des vidéos d'une caméra de surveillance.
-Stocker des images pour un site web.
-Héberger des backups d'applications.
+Sauvegarder des vidéos d'une caméra de surveillance.   
+Stocker des images pour un site web.    
+Héberger des backups d'applications.    
 
-📦 Caractéristiques : Gèrer de grands volumes de données non structurées.
+📦 Caractéristiques : Gèrer de grands volumes de données non structurées.    
 
-Les fichiers sont stockés sous forme de blobs (Binary Large OBjects) qyuiu sont de trois types:  Block Blobs, Append Blobs, Page Blobs.
+Les fichiers sont stockés sous forme de blobs (Binary Large OBjects) qyuiu sont de trois types:  Block Blobs, Append Blobs, Page Blobs.    
 
-2. File Storage (Stockage de fichiers Azure Files)
-📁 Azure Files = serveur de fichiers dans le cloud
+2. File Storage (Stockage de fichiers Azure Files)     
+📁 Azure Files = serveur de fichiers dans le cloud     
 
-✅ Idéal pour : Remplacer un serveur de fichiers On premises: C’est comme un serveur de fichiers mais hébergé sur Azure, pour paratger des fichiers entre applications 
-📦 Caractéristiques :
-✅ Accès facile, comme un disque réseau.
-🔐 Sécurisé, scalable et sans maintenance.
-🧰 Parfait pour le travail collaboratif, les sauvegardes ou les logiciels métiers.
-Les utilisateurs accèdent au stockage comme un disque réseau (ex. : Z:\ ou \mystorageaccount.file.core.windows.net\documents) depuis Windows, macOS ou Linux via le protocole SMB 
-Pas besoin de VPN : possibilité d’accès depuis n’importe où, même en télétravail.
+✅ Idéal pour : Remplacer un serveur de fichiers On premises: C’est comme un serveur de fichiers mais hébergé sur Azure, pour paratger des fichiers entre applications     
+📦 Caractéristiques :    
+✅ Accès facile, comme un disque réseau.    
+🔐 Sécurisé, scalable et sans maintenance.   
+🧰 Parfait pour le travail collaboratif, les sauvegardes ou les logiciels métiers.    
+Les utilisateurs accèdent au stockage comme un disque réseau (ex. : Z:\ ou \mystorageaccount.file.core.windows.net\documents) depuis Windows, macOS ou Linux via le protocole SMB     
+Pas besoin de VPN : possibilité d’accès depuis n’importe où, même en télétravail.   
 
 📌 Exemples :
 Stocker des fichiers bureautiques partagés entre plusieurs équipes.
