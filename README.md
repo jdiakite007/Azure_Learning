@@ -1,10 +1,9 @@
-# Azure_Learning
 
 <p align="center">
     <img src="assets/icons8-azure-240.png">
 </p>
 <div align="center">
-  <h1>Azure Learning Sandbox</h1>
+  <h1>Azure Learning </h1>
 </div>
 
 ## Table of Contents
