@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="github.com/jdiakite007/Azure_Learning/blob/main/Images/icons8-azure-240.png">
+    <img src="Azure_Learning/blob/main/Images/icons8-azure-240.png">
 </p>
 <div align="center">
   <h1>Azure Learning </h1>
