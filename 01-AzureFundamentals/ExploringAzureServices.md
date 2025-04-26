@@ -230,3 +230,35 @@ Routage intelligent selon la géo de l’utilisateur
 Tu as des utilisateurs en Europe, Amérique, Asie.
 💡 Azure Front Door les redirige automatiquement vers la région la plus proche pour un accès plus rapide.
 
+
+## Exploration des services Azure
+
+### 1. Portail Azure
+
+1. Connectez-vous au [Portail Azure](https://portal.azure.com) à l’aide de votre compte Azure.
+2. Accédez au tableau de bord, où vous trouverez une gamme de services.
+
+### 2. Naviguer dans le tableau de bord Azure
+
+1. Une fois connecté, vous accédez au tableau de bord Azure. Ce tableau de bord sert de hub central pour la gestion de vos ressources Azure.
+2. Explorez les différentes sections, notamment « Tous les services », « Machines virtuelles », « Services d’applications », « Bases de données », etc.
+
+### 3. Parcourir et rechercher des services
+
+1. Cliquez sur l’option « Tous les services » dans la barre latérale gauche pour afficher la liste complète des services Azure.
+2. Utilisez la barre de recherche pour trouver rapidement des services spécifiques. Par exemple, recherchez « Stockage Azure » ou « Azure App Service ».
+
+### 4. Explorer les catégories de services
+
+1. Les services Azure sont classés en sections telles que Calcul, Mise en réseau, Stockage, Bases de données, IA + Machine Learning, DevOps, etc.
+2. Cliquez sur une catégorie qui vous intéresse pour explorer les services disponibles dans ce domaine.
+
+### 5. En savoir plus sur les services
+
+1. Cliquez sur un service spécifique pour accéder à sa page d’aperçu.
+2. Explorez les fonctionnalités, les détails des prix, la documentation et les guides de démarrage associés au service.
+
+## Pourquoi explorer les services Azure ?
+
+Comprendre la vaste gamme de services Azure est crucial pour concevoir et mettre en œuvre des solutions cloud efficaces. L’exploration de divers services permettra de
+
