@@ -156,33 +156,86 @@ Historique des commandes d’un utilisateur
 - **Azure Load Balancer** : répartissez le trafic réseau entrant vers les ressources pour une meilleure disponibilité.
 - **Passerelle VPN Azure** : établissez des connexions sécurisées entre les réseaux locaux et Azure.
 
-## Exploration des services Azure
+- 🌐 1. **Azure Virtual Network (VNet)**
+  Servcice pour crééer un réseau virtuel privé dans Azure, comme un réseau local d’entreprise, mais hébergé dans le cloud.
+✅ Utilisé pour :Isoler et connecter des ressources Azure (VMs, bases, services...)
 
-### 1. Portail Azure
+📌 Exemple :
+Tu crées deux VM dans Azure (serveur web + base de données)
+💡 Avec un VNet, tu l'assures que tes VM sont isolés du reste du cloud Azuret, qu’elles communiquent entre elles en privé, sans passer par Internet  et que personne d'autres que toi ne peut y acceder
 
-1. Connectez-vous au [Portail Azure](https://portal.azure.com) à l’aide de votre compte Azure.
-2. Accédez au tableau de bord, où vous trouverez une gamme de services.
+2. **Azure Network Security Groups (NSG)**
+Des pare-feux simples qui autorisent ou bloquent le trafic réseau vers ou depuis des ressources Azure.
+✅ Utilisé pour :
+Protéger les VMs et sous-réseaux
+Contrôler les flux entrants/sortants
+📌 Exemple :
+Tu veux qu’une VM n’accepte que le port 80 (web) et bloque le reste.
+💡 Tu configures un NSG pour filtrer le trafic réseau de cette VM.
 
-### 2. Naviguer dans le tableau de bord Azure
+3. **Azure Load Balancer**
+   Un service pour répartir automatiquement le trafic réseau entrant entre plusieurs serveurs pour une meilleure disponibilité.
+✅ Utilisé pour :Équilibrer la charge réseau sur plusieurs instances
+📌 Exemple :
+Ton site web reçoit beaucoup de trafic. Tu le déploies sur 3 VMs.
+💡 Azure Load Balancer répartit les visiteurs entre ces 3 serveurs pour éviter les surcharges.
 
-1. Une fois connecté, vous accédez au tableau de bord Azure. Ce tableau de bord sert de hub central pour la gestion de vos ressources Azure.
-2. Explorez les différentes sections, notamment « Tous les services », « Machines virtuelles », « Services d’applications », « Bases de données », etc.
+4. **Azure VPN Gateway**
+Permet de créer une connexion VPN sécurisée entre ton réseau local (on-prem) et Azure.
+✅ Utilisé pour :
+Étendre ton réseau d’entreprise dans Azure
+Accéder à Azure depuis ton siège ou data center
+📌 Exemple :
+Tu veux que les utilisateurs au bureau accèdent aux ressources Azure comme s’ils étaient sur le même réseau.
+💡 Tu configures une VPN Gateway pour établir un tunnel chiffré avec Azure.
 
-### 3. Parcourir et rechercher des services
+ 5. **Azure Application Gateway**
+Un load balancer intelligent de niveau 7 (couche applicative), qui comprend les requêtes HTTP/HTTPS.
+✅ Utilisé pour :
+Rediriger les requêtes selon l’URL
+Terminer le SSL (HTTPS)
+Protéger les applis avec le Web Application Firewall (WAF)
+📌 Exemple :
+Tu as deux applis web : /client et /admin.
+💡 L’Application Gateway dirige /client vers une app A, /admin vers une app B. Il filtre aussi les attaques web grâce au WAF.
 
-1. Cliquez sur l’option « Tous les services » dans la barre latérale gauche pour afficher la liste complète des services Azure.
-2. Utilisez la barre de recherche pour trouver rapidement des services spécifiques. Par exemple, recherchez « Stockage Azure » ou « Azure App Service ».
 
-### 4. Explorer les catégories de services
+6. **Azure ExpressRoute**
+Une connexion privée dédiée entre Azure et ton infrastructure locale, sans passer par Internet.
+✅ Utilisé pour :
+Connexions critiques, très rapides et très fiables
+Entreprises avec besoins élevés en bande passante
+📌 Exemple :
+Une banque héberge des bases de données sensibles sur site et veut les connecter à Azure.
+💡 Elle utilise ExpressRoute pour garantir fiabilité, sécurité et performance.
 
-1. Les services Azure sont classés en sections telles que Calcul, Mise en réseau, Stockage, Bases de données, IA + Machine Learning, DevOps, etc.
-2. Cliquez sur une catégorie qui vous intéresse pour explorer les services disponibles dans ce domaine.
+ 7. **Azure DNS**
+Un service pour gérer des noms de domaine dans Azure, comme un serveur DNS classique.
+✅ Utilisé pour :
+Gérer les noms de domaine de tes applications (ex : monapp.azurewebsites.net → IP)
+Rendre tes services accessibles via des noms personnalisés
+📌 Exemple :
+Tu veux que ton site soit accessible sur www.monsite.com.
+💡 Tu utilises Azure DNS pour diriger ce nom vers ton service Azure.
 
-### 5. En savoir plus sur les services
+8. Azure Firewall
+Un pare-feu cloud complet, centralisé, pour protéger l’ensemble de ton réseau Azure.
+✅ Utilisé pour :
+Filtrer le trafic entrant/sortant
+Bloquer les IP malveillantes
+Journaliser tout le trafic réseau
+📌 Exemple :
+Tu veux contrôler toutes les connexions sortantes de tes VMs.
+💡 Tu places un Azure Firewall entre les VMs et Internet
 
-1. Cliquez sur un service spécifique pour accéder à sa page d’aperçu.
-2. Explorez les fonctionnalités, les détails des prix, la documentation et les guides de démarrage associés au service.
 
-## Pourquoi explorer les services Azure ?
+9. **Azure Front Door**
+➤ Ce que c’est :
+Un service d’optimisation du trafic web mondial avec accélération, WAF, caching, et HA.
+✅ Utilisé pour :
+Sites à fort trafic mondial
+Routage intelligent selon la géo de l’utilisateur
+📌 Exemple :
+Tu as des utilisateurs en Europe, Amérique, Asie.
+💡 Azure Front Door les redirige automatiquement vers la région la plus proche pour un accès plus rapide.
 
-Comprendre la vaste gamme de services Azure est crucial pour concevoir et mettre en œuvre des solutions cloud efficaces. L’exploration de divers services permettra de
