@@ -12,10 +12,6 @@ Azure offre une vaste gamme de services conçus pour répondre aux divers besoin
 
 Les services de calcul Azure sont au cœur du cloud : ce sont eux qui exécutent des applications, hébergent des sites web, gèrent des conteneurs, ou encore traitent des données.
 
-- **Machines virtuelles** : Lancez et gérez des instances virtualisées de systèmes d’exploitation.
-- **Azure App Service** : déployez et hébergez des applications web sans gérer l’infrastructure 
-- **Azure Functions** : Exécutez des extraits de code en réponse à des événements
-
 1. **Azure Virtual Machines (VMs)**: Un ordinateur dans le cloud, comme un PC ou un serveur physique, que tu peux démarrer, configurer et utiliser à distance.
 ✅ Tu choisis :
 Le système d’exploitation (Windows, Linux)
@@ -77,7 +73,6 @@ Limiter le temps d’utilisation automatique (auto shutdown)
 📌 Exemple concret :
 Ton équipe de dev veut tester différentes versions d’un logiciel.
 💡 Tu crées un lab Azure où chacun a sa propre VM à usage temporaire.
-
 
 
 ### 2. Services de stockage
@@ -151,10 +146,6 @@ Historique des commandes d’un utilisateur
 
 
 ### 3. Services de réseautage
-
-- **Réseau virtuel Azure** : créez des réseaux isolés pour gérer la communication des machines virtuelles.
-- **Azure Load Balancer** : répartissez le trafic réseau entrant vers les ressources pour une meilleure disponibilité.
-- **Passerelle VPN Azure** : établissez des connexions sécurisées entre les réseaux locaux et Azure.
 
 - 🌐 1. **Azure Virtual Network (VNet)**
   Servcice pour crééer un réseau virtuel privé dans Azure, comme un réseau local d’entreprise, mais hébergé dans le cloud.
