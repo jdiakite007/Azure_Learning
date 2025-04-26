@@ -84,8 +84,8 @@ Les fichiers sont stockés sous forme de blobs (Binary Large OBjects) qyuiu sont
 
 2. File Storage (Stockage de fichiers Azure Files)     
 📁 Azure Files = serveur de fichiers dans le cloud     
-
-✅ Idéal pour : Remplacer un serveur de fichiers On premises: C’est comme un serveur de fichiers mais hébergé sur Azure, pour paratger des fichiers entre applications     
+C’est comme un serveur de fichiers mais hébergé sur Azure,
+✅ Idéal pour : Remplacer un serveur de fichiers On premises,pour paratger des fichiers entre applications     
 📦 Caractéristiques :    
 ✅ Accès facile, comme un disque réseau.    
 🔐 Sécurisé, scalable et sans maintenance.   
