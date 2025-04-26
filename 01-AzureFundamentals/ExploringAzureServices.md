@@ -193,36 +193,35 @@ Tu as deux applis web : /client et /admin.
 
 6. **Azure ExpressRoute**
 Une connexion privée dédiée entre Azure et ton infrastructure locale, sans passer par Internet.
-✅ Utilisé pour :
-Connexions critiques, très rapides et très fiables
-Entreprises avec besoins élevés en bande passante
-📌 Exemple :
+✅ Utilisé pour :    
+Connexions critiques, très rapides et très fiables  
+Entreprises avec besoins élevés en bande passante   
+📌 Exemple :  
 Une banque héberge des bases de données sensibles sur site et veut les connecter à Azure.
 💡 Elle utilise ExpressRoute pour garantir fiabilité, sécurité et performance.
 
  7. **Azure DNS**
-Un service pour gérer des noms de domaine dans Azure, comme un serveur DNS classique.
-✅ Utilisé pour :
+Un service pour gérer des noms de domaine dans Azure, comme un serveur DNS classique.     
+✅ Utilisé pour :    
 Gérer les noms de domaine de tes applications (ex : monapp.azurewebsites.net → IP)
 Rendre tes services accessibles via des noms personnalisés
-📌 Exemple :
-Tu veux que ton site soit accessible sur www.monsite.com.
-💡 Tu utilises Azure DNS pour diriger ce nom vers ton service Azure.
+📌 Exemple :   
+Tu veux que ton site soit accessible sur www.monsite.com.   
+💡 Tu utilises Azure DNS pour diriger ce nom vers ton service Azure.   
 
 8. Azure Firewall
 Un pare-feu cloud complet, centralisé, pour protéger l’ensemble de ton réseau Azure.
-✅ Utilisé pour :
+✅ Utilisé pour :    
 Filtrer le trafic entrant/sortant
 Bloquer les IP malveillantes
 Journaliser tout le trafic réseau
-📌 Exemple :
-Tu veux contrôler toutes les connexions sortantes de tes VMs.
-💡 Tu places un Azure Firewall entre les VMs et Internet
+📌 Exemple :     
+Tu veux contrôler toutes les connexions sortantes de tes VMs.   
+💡 Tu places un Azure Firewall entre les VMs et Internet   
 
 
 9. **Azure Front Door**
-➤ Ce que c’est :
-Un service d’optimisation du trafic web mondial avec accélération, WAF, caching, et HA.
+  ➤  Un service d’optimisation du trafic web mondial avec accélération, WAF, caching, et HA.
 ✅ Utilisé pour :
 Sites à fort trafic mondial
 Routage intelligent selon la géo de l’utilisateur
