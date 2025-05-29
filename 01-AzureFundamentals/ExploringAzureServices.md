@@ -15,30 +15,30 @@ Les services de calcul Azure exécutent des applications, hébergent des sites w
 
 2. **Azure App Service**:
    Un service pour deployer et pour héberger des applications web, des API ou des sites, sans avoir à gérer le serveur.
-   Langages supportés: .NET, Java, Node.js, PHP, Python, Ruby
-📌 Exemple concret :    
-Tu développes un petit site web en Python ou une API en Node.js.
+   Langages supportés: .NET, Java, Node.js, PHP, Python, Ruby    
+📌 Exemple concret :        
+Tu développes un petit site web en Python ou une API en Node.js.    
 💡 Tu déploies ton code directement sur Azure App Service. Azure s’occupe du reste (serveur, OS, patchs...).
 
-3. **Azure Functions**: 
+3. **Azure Functions**:     
 Un servcie pour exécuter des extraits de code en réponse à des événements    
-Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.
-✅ Idéal pour :    
+Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.     
+✅ Idéal pour :         
 Tâches simples ou automatiques   
 Événements déclenchés par des uploads, des messages, des planifications (cron)
-📌 Exemple concret :
+📌 Exemple concret :       
 À chaque fois qu’un fichier est ajouté dans Azure Blob Storage, tu veux analyser son contenu.
 💡 Tu crées une Azure Function qui se déclenche automatiquement dès qu’un fichier est ajouté.
 
 4. **Azure Container Instances (ACI)**: 
 Un service pour exécuter un conteneur Docker, sans gérer un serveur.
 Pratique pour tester des images Docker
-📌 Exemple concret :
+📌 Exemple concret :     
 Tu veux tester un microservice que tu as empaqueté dans un conteneur Docker.
 💡 Lance-le directement dans Azure Container Instances, sans te soucier de Kubernetes ou d'une VM.
 
 5. **Azure Kubernetes Service (AKS)**
-Une plateforme complète pour gérer des applications conteneurisées à grande échelle, avec Kubernetes.
+Une plateforme complète pour gérer des applications conteneurisées à grande échelle, avec Kubernetes.       
 ✅Gère automatiquement le déploiement, le scaling et les mises à jour
 📌 Exemple concret :
 Une entreprise gère 20 microservices dans des conteneurs.
