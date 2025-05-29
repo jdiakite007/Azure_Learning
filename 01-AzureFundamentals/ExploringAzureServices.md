@@ -22,38 +22,34 @@ Tu développes un petit site web en Python ou une API en Node.js.
 
 3. **Azure Functions**:     
 Un servcie pour exécuter des extraits de code en réponse à des événements    
-Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.     
-✅ Idéal pour :         
-Tâches simples ou automatiques   
-Événements déclenchés par des uploads, des messages, des planifications (cron)
+Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.          
+Événements déclenchés par des uploads, des messages, des planifications (cron)     
 📌 Exemple concret :       
 À chaque fois qu’un fichier est ajouté dans Azure Blob Storage, tu veux analyser son contenu.
 💡 Tu crées une Azure Function qui se déclenche automatiquement dès qu’un fichier est ajouté.
 
 4. **Azure Container Instances (ACI)**: 
 Un service pour exécuter un conteneur Docker, sans gérer un serveur.
-Pratique pour tester des images Docker
+Pratique pour tester des images Docker    
 📌 Exemple concret :     
 Tu veux tester un microservice que tu as empaqueté dans un conteneur Docker.
 💡 Lance-le directement dans Azure Container Instances, sans te soucier de Kubernetes ou d'une VM.
 
 5. **Azure Kubernetes Service (AKS)**
 Une plateforme complète pour gérer des applications conteneurisées à grande échelle, avec Kubernetes.       
-✅Gère automatiquement le déploiement, le scaling et les mises à jour
 📌 Exemple concret :
 Une entreprise gère 20 microservices dans des conteneurs.
-💡 Elle utilise AKS pour les déployer, les faire évoluer automatiquement, et surveiller leur état.
+💡 Elle utilise AKS pour les déployer, les faire évoluer automatiquement, et surveiller leur état.     
+   Gère automatiquement le déploiement, le scaling et les mises à jour
 
 6. **Azure Batch**
 Un service pour exécuter un grand nombre de tâches en parallèle (traitements lourds, calculs scientifiques, rendu vidéo...).
-✅ Caractéristiques :
-Très utile pour des workloads en batch (lots de tâches à lancer)
 Gère automatiquement les VMs nécessaires
 📌 Exemple concret :
 Tu dois traiter 10 000 images avec un script Python.
 💡 Utilise Azure Batch pour répartir le traitement sur plusieurs machines en parallèle.
 
-🔹 7. **Azure DevTest Labs**
+7. **Azure DevTest Labs**
 Un service pour créer rapidement des environnements de test ou développement, sans dépasser ton budget.
 ✅ Idéal pour :
 Tester une appli sans perturber l’environnement de prod
