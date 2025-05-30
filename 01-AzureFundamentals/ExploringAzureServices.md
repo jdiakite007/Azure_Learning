@@ -11,9 +11,9 @@ Les services de calcul Azure exécutent des applications, hébergent des sites w
 
 1. **Azure Virtual Machines (VMs)**:   
 Un service qui permet de créer et d'utiliser des ordinateurs virtuels sur Azure.
-C’est comme louer un ordinateur dans un datacenter Microsoft que vous configurer selon vos besoins (Windows, Linux, CPU, mémoire, disque, etc.).
+C’est comme louer un ordinateur dans un datacenter Microsoft que vous configurer selon vos besoins (Windows, Linux, CPU, mémoire, disque, etc.).     
 📌 Exemple concret :
-Vous avez un site web, une base de données ou une application qui doit tourner 24/7, mais vous ne voulez pas gérer un serveur physique chez vous ou dans vos locaux :
+Vous avez un site web, une base de données ou une application qui doit tourner 24/7, mais vous ne voulez pas gérer un serveur physique chez vous ou dans vos locaux :      
 ✅ Solution :
 Vous créez une machine virtuelle sur Azure, avec :
 Windows Server 2022
