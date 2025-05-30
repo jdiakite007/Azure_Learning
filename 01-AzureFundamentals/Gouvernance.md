@@ -38,3 +38,23 @@ Excellence opérationnelle
 
 📌 Exemple :
 Advisor détecte une VM sous-utilisée → propose de la redimensionner pour économiser.
+
+
+5. **Azure Blueprints**
+Permet de déployer un ensemble complet de ressources + règles de gouvernance en un seul modèle.
+
+Contenu possible d’un Blueprint :
+Groupes de ressources
+Rôles RBAC
+Politiques Azure
+Modèles ARM (infrastructure)
+
+📌 Exemple :
+Créer un environnement “Production” avec :
+Une stratégie de chiffrement obligatoire
+Un rôle Contributor attribué
+Un tag automatique appliqué
+
+💡 BluePrint = modèle de déploiement + conformité intégré
+
+
