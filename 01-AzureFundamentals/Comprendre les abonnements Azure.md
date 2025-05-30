@@ -1,14 +1,56 @@
 1. **Comprendre les abonnements Azure**    
 
-Un abonnement Azure est comme un compte de facturation. Il contient :
-Les ressources que tu crées (VM, bases de données, stockage…)
-Les coûts liés à ces ressources
-Les règles de sécurité et de gestion (comme les rôles et accès)
+Un abonnement Azure est comme un compte de facturation.
+Il contient :
+Les ressources que tu crées : machines virtuelles (VM), bases de données, réseaux, etc.
+Les coûts liés à ces ressources (c’est ce qui est facturé)
+Les règles de sécurité et de gestion, comme les rôles d’accès (RBAC)
 
-📌 Tu peux avoir plusieurs abonnements pour séparer les environnements (test, prod, etc.)
+📌 Tu peux avoir plusieurs abonnements pour séparer :
+Environnements (test, production, développement)
+Projets ou équipes
 
-🔹 Contrôle d’accès (RBAC)
-Tu peux contrôler qui fait quoi dans un abonnement avec des rôles (lecteur, contributeur, propriétaire).
+
+2. Contrôle d’accès dans Azure – RBAC
+🔹 RBAC = Role-Based Access Control
+➡️ C’est un système qui permet de gérer qui a le droit de faire quoi dans Azure.
+
+Tu attribues un rôle à un utilisateur ou groupe sur :
+Un abonnement
+Un groupe de ressources
+Une ressource spécifique (ex : une VM)
+
+🔐 Rôles RBAC principaux :
+Rôle	                      Ce qu’il peut faire
+Lecteur	🔎                 Voir les ressources, mais ne peut rien modifier
+Contributeur	                 🛠️ Créer et modifier les ressources (mais ne peut pas donner des accès)
+Propriétaire	👑               A tous les droits, y compris la gestion des accès
+
+
+🧩 Exemple concret :
+Tu veux que :
+Julie puisse voir les machines virtuelles → Donne-lui le rôle de Lecteur
+Karim puisse créer et modifier des ressources → Donne-lui le rôle de Contributeur
+Sarah puisse gérer tout, y compris donner des accès → Donne-lui le rôle de Propriétaire
+
+🗂️ En résumé pour AZ-900 :
+Concept	Description simple
+Abonnement Azure	Contient les ressources, coûts et règles d’accès
+RBAC	Contrôle qui (utilisateur, groupe etc..) peut faire quoi (Lecteur, Contributeur, Propriétaire) sur quellle scope ou portée  dans Azure
+Rôles principaux	Lecteur, Contributeur, Propriétaire
+Portée possible	:Abonnement, groupe de ressources ou ressource unique
+
+Exercies:
+Quel rôle permet uniquement de voir sans modifier ?
+Le rôle Lecteur permet uniquement de consulter les ressources sans pouvoir les modifier.
+
+Quel rôle permet de créer et modifier mais pas gérer les accès ?
+Réponse : 
+Le rôle Contributeur peut créer et modifier des ressources mais ne peut pas gérer les accès ou les rôles.
+
+Qui peut gérer les accès aux ressources ?
+Réponse : C
+Le rôle Propriétaire a tous les droits, y compris la gestion des accès.
 
 🔹 Types d’offres Azure
 **Free** : pour tester gratuitement
