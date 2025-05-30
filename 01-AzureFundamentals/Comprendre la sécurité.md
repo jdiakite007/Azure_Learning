@@ -39,14 +39,11 @@ Tout le trafic sortant d’un sous-réseau passe d’abord par un Azure Firewall
 Utilisation typique : Scénarios de sécurité avancés ou architectures avec inspection réseau.
 
 **Azure Firewall**
-➤ Définition :
 Azure Firewall est un pare-feu cloud managé, hautement disponible, avec filtrage réseau et application.
 
 ➤ Fonctionnalités :
 Inspection du trafic sortant et entrant.
-
 Règles DNS, FQDN (noms de domaine).
-
 Intégration avec Azure Monitor pour les logs.
 
 ➤ Exemple :
@@ -67,20 +64,11 @@ Une application web critique subit une attaque DDoS : Azure DDoS Standard absorb
 Utilisation typique : Applis critiques, e-commerce, services publics.
 
 
- **outils et fonctionnalités de sécurité** 
-Azure fournit plusieurs outils intégrés pour :
-Protéger les ressources,
-Gérer les secrets,
-Surveiller les menaces,
-Appliquer des stratégies de sécurité
-
- **Microsoft Defender for Cloud)**
-
-Plateforme de gestion unifiée de la sécurité dans Azure (et hybride).
-Elle permet de :
-Évaluer la sécurité des ressources,
-Recevoir des recommandations,
-Détecter les menaces.
+**Azure Security Center (Microsoft Defender for Cloud)**
+Azure Security Center est une plateforme de gestion de la sécurité ans Azure (et hybride). Elle vous aide à :
+Évaluer la sécurité des ressources (fournir un Secure Score de vos ressources, détecter des machines virtuelles mal configurées)
+Détecter les vulnérabilités(machine virtuelles mal configuréés) => Recevoir des recommandations => Prévenir les menaces,
+Renforcer la posture de sécurité de vos ressources Azure, hybrides et multicloud.
 
 ➤ Fonctions clés :
 Secure Score (évaluation du niveau de sécurité)
@@ -89,35 +77,24 @@ Intégration avec Azure Defender pour protection avancée
 
 ➤ Exemple :
 Une VM sans pare-feu est détectée → le Security Center vous alerte et propose de corriger la configuration.
-
-
 💡 Utile pour tous les types d’entreprise : surveillance en temps réel, conformité ISO/GDPR.
 
 **Azure Key Vault**
-Service pour gérer et protéger les secrets, comme :Mots de passe ,Clés API , Certificats, Clés de chiffrement
-
+Service pour gérer et protéger les secrets, comme: mots de passe ,Clés API , Certificats, Clés de chiffrement
+permet de limiter l’accès aux secrets via des rôles RBAC.
 ➤ Exemple :
 Une application web stocke une clé d’API dans Key Vault au lieu de la mettre dans le code source.
 
 **Azure Information Protection (AIP)**
-➤ Définition :
 Service de classification et de protection des documents.
 ➤ Fonctionnalités :
-Étiquetage automatique ou manuel des documents (ex : "Confidentiel")
-Chiffrement intégré
-Contrôle d’accès même après partage
+Étiquetage automatique ou manuel des documents (ex : "Confidentiel") , Chiffrement intégré , Contrôle d’accès même après partage
 
 ➤ Exemple :
 Un employé télécharge un document "Confidentiel" → il est automatiquement chiffré et limité aux membres de l’organisation.
 🔒AIP travaille avec Microsoft 365 pour appliquer la protection dans Word, Excel, Outlook, etc.
+peut empêcher l’accès à un fichier même après l’avoir partagé à l’extérieur.
 
-**Azure Security Center (Microsoft Defender for Cloud)**
-Azure Security Center est une plateforme de gestion de la sécurité. Elle vous aide à :
-Prévenir les menaces,
-Détecter les vulnérabilités (fournir un Secure Score de vos ressources, détecter des machines virtuelles mal configurées
-Renforcer la posture de sécurité de vos ressources Azure, hybrides et multicloud.
-
-🧠 Important : Même si le nom officiel a changé, AZ-900 utilise encore souvent "Azure Security Center" dans ses supports.
 
 **Microsoft Defender for Identity** (ex-ATP) est conçu pour détecter en temps réél:
 Les tentatives d’attaques sur les comptes d'identité (Azure AD ou AD local)
@@ -128,34 +105,6 @@ Détection d’activités suspectes : Pass-the-Hash, reconnaissance, exfiltratio
 ATP détecte une tentative de connexion à répétition d’un compte admin depuis un autre pays → envoie une alerte de compromission.
 
 
-**Azure Key Vault** permet de limiter l’accès aux secrets via des rôles RBAC.
-**Azure Information Protection** peut empêcher l’accès à un fichier même après l’avoir partagé à l’extérieur.
 
 
-7. Azure Security Center peut uniquement surveiller les ressources Azure, pas les serveurs sur site.
-❌ Faux (il peut surveiller les environnements hybrides)
-
-8. Azure ATP est utilisé pour appliquer des stratégies de chiffrement aux documents.
-❌ Faux (c’est le rôle d’AIP)
-
-📘 Partie 3 : Scénarios pratiques (Réponses ouvertes)
-9. Un développeur stocke une clé d’API dans le code source GitHub. Quelle solution Azure recommandez-vous pour améliorer la sécurité ?
-
-✅ Réponse attendue :
-Utiliser Azure Key Vault pour stocker la clé d’API et y accéder via des identifiants gérés (Managed Identity).
-
-10. Une entreprise souhaite protéger ses documents Excel contenant des données sensibles, même après leur téléchargement. Quelle solution utiliser ?
-
-✅ Réponse attendue :
-Utiliser Azure Information Protection (AIP) pour appliquer une étiquette "Confidentiel" avec chiffrement et restriction de lecture.
-
-11. Un responsable IT veut suivre l'état de sécurité global de son environnement Azure et recevoir des recommandations. Quel outil utiliser ?
-
-✅ Réponse attendue :
-Azure Security Center / Microsoft Defender for Cloud, qui fournit un Secure Score et des recommandations de sécurité.
-
-12. Une alerte signale une attaque "Pass-the-Hash" sur un contrôleur de domaine. Quel outil Azure peut générer cette alerte ?
-
-✅ Réponse attendue :
-Microsoft Defender for Identity (anciennement Azure Advanced Threat Protection - A
 
