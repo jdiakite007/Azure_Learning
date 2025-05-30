@@ -1,10 +1,9 @@
 1. **Qu’est-ce qu’un SLA (Service Level Agreement)**?     
 Un SLA, ou Contrat de niveau de service, est une garantie écrite de Microsoft sur la disponibilité (uptime) d’un service Azure.    
-
-👉 Il indique le pourcentage de temps où le service doit être disponible, sinon vous pouvez demander un remboursement partiel (crédit).   
+Il indique la durée maximale de panne autorisée (en pourcentage de temps) , sinon vous pouvez demander un remboursement partiel (crédit).   
 
 📌 Exemple :     
-Un SLA de 99,9 % signifie que le service peut être indisponible pendant 8h45 max par an.
+Un SLA de 99,9 % signifie que le service peut être indisponible (panne) pendant 8h45 max par an.
 
 🧮 2. Exemples de niveaux de SLA
 SLA Azure	                                     Temps d’indisponibilité max par mois
@@ -34,7 +33,7 @@ SLA global = 0.9995 × 0.9999 × 0.999 = 0.9984 ≈ 99.84 %
 ⚠️ Si l’un des services tombe, ton application peut ne plus fonctionner. C’est pourquoi on multiplie les SLA.
 
 📌 Définitions clés :      
-SLA (Service Level Agreement)  = Pomesse ou garantie disponibilité d’un service Azure (en %) ou Temps d’indisponibilité ou	Durée maximale de panne autorisée 
+SLA (Service Level Agreement)  = Promesse ou garantie disponibilité d’un service Azure (en %) ou Temps d’indisponibilité ou	
 SLA individuel =	SLA spécifique à un service (ex : Azure SQL = 99,99 %)
 SLA global / composite	Calculé si plusieurs services sont utilisés ensemble → Produit des SLAs
 Plus le SLA est élevé, plus le service est fiable, mais souvent plus coûteux.
@@ -46,7 +45,6 @@ SLA (%)	              Temps d'arrêt autorisé (par mois)
 99.95 %	                     ~21 min
 99.99 %	                    ~4 min
 100 %	                         0 min
-
 Tu peux améliorer le SLA global en répliquant ou en utilisant des services haute disponibilité.
 
 
