@@ -9,17 +9,17 @@ Avant de commencer, assurez-vous d’avoir :
 ### 1. Services de calcul
 Les services de calcul Azure exécutent des applications, hébergent des sites web, gèrent des conteneurs, ou encore traitent des données.
 
-1. **Azure Virtual Machines (VMs)**:
+1. **Azure Virtual Machines (VMs)**:   
    Un ordinateur dans le cloud (PC ou un serveur physique) que tu peux démarrer, configurer et utiliser à distance.    
 
-2. **Azure App Service**:
+2. **Azure App Service**:    
    Un service pour deployer et pour héberger des applications web, des API ou des sites, sans avoir à gérer le serveur.
    Langages supportés: .NET, Java, Node.js, PHP, Python, Ruby    
 📌 Exemple concret :        
 Tu développes un petit site web en Python ou une API en Node.js.    
 💡 Tu déploies ton code directement sur Azure App Service. Azure s’occupe du reste (serveur, OS, patchs...).
 
-3. **Azure Functions**:     
+3. **Azure Functions**:         
 Un servcie pour exécuter des extraits de code en réponse à des événements    
 Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.          
 Événements déclenchés par des uploads, des messages, des planifications (cron)     
