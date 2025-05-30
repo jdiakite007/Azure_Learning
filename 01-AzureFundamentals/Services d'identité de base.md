@@ -50,3 +50,31 @@ Les mots de passe peuvent être volés. MFA réduit fortement le risque de pirat
 Étape 1 : L’utilisateur entre son mot de passe.
 Étape 2 : Il reçoit un code sur son téléphone qu’il doit entrer pour valider la connexion.
 💡 Très utile pour les accès sensibles comme l’administration Azure ou les données confidentielles.
+
+
+
+📘 Partie 3 : Scénarios pratiques (Réponses ouvertes)
+9. Un client veut que seules ses VMs "web" puissent parler aux VMs "base de données" sur le port 1433. Que recommandez-vous d’utiliser ?
+
+✅ Réponse attendue :
+Créer deux Application Security Groups (ex. : web-servers, db-servers) et appliquer une règle NSG qui autorise le trafic TCP sur le port 1433 de web-servers vers db-servers.
+
+10. Une entreprise veut s’assurer qu’un pirate ne puisse pas accéder à son portail Azure même s’il connaît le mot de passe d’un employé. Quelle solution faut-il activer ?
+
+✅ Réponse attendue :
+Activer Azure Multi-Factor Authentication (MFA) pour ajouter une vérification supplémentaire lors de la connexion.
+
+11. Une application web publique est victime de saturation (DDoS). Quelle solution Azure pouvez-vous activer ?
+
+✅ Réponse attendue :
+Activer Azure DDoS Protection Standard sur la ressource (ou le VNet) pour protéger contre les attaques de type DDoS.
+
+12. Quelle est la différence entre ASG et NSG ?
+
+✅ Réponse attendue :
+
+NSG : définit les règles réseau (IP, ports, protocole).
+
+ASG : regroupe des VMs pour appliquer les règles NSG plus facilement sans utiliser les adresses IP.
+
+
