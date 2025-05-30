@@ -35,9 +35,7 @@ Tu veux tester un microservice que tu as empaqueté dans un conteneur Docker.
 💡 Lance-le directement dans Azure Container Instances, sans te soucier de Kubernetes ou d'une VM.
 
 5. **Azure Kubernetes Service (AKS)**     
-Un service pour deployer, exécuter et gerer des applications conteneurisées avec Kubernetes sans avoir à gérer toute l’infrastructure.
-🧠 En résumé :
-AKS = Kubernetes dans le cloud, géré par Azure (moins de configuration, moins d'administration).     
+Un service pour deployer, exécuter et gerer des applications conteneurisées avec Kubernetes sans avoir à gérer toute l’infrastructure.   
 ✅ Avantages d’AKS :
 Plus besoin de gérer manuellement Kubernetes.
 Azure gère les mises à jour, la sécurité, l’auto-scaling.
