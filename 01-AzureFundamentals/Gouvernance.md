@@ -46,8 +46,9 @@ Permet de déployer un ensemble complet de ressources + règles de gouvernance e
 Contenu possible d’un Blueprint :
 Groupes de ressources
 Rôles RBAC
-Politiques Azure
+Stratégies Azure Policy
 Modèles ARM (infrastructure)
+
 
 📌 Exemple :
 Créer un environnement “Production” avec :
@@ -56,5 +57,7 @@ Un rôle Contributor attribué
 Un tag automatique appliqué
 
 💡 BluePrint = modèle de déploiement + conformité intégré
+Vous devez créer un environnement standardisé (avec un groupe de ressources, des rôles RBAC, et des stratégies). Quelle solution utiliser ?
+✅ Réponse attendue : Azure Blueprints, qui permet de déployer tous ces éléments de façon cohérente.
 
 
