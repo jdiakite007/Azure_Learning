@@ -8,30 +8,49 @@ Les règles de sécurité et de gestion, comme les rôles d’accès (RBAC)
 
 📌 Tu peux avoir plusieurs abonnements pour séparer :
 Environnements (test, production, développement)
-Projets ou équipes
+Projets ou équipes    
 
 
-2. Contrôle d’accès dans Azure – RBAC
-🔹 RBAC = Role-Based Access Control
+**Contrôle d’accès dans Azure – RBAC** ou Role-Based Access Control
 ➡️ C’est un système qui permet de gérer qui a le droit de faire quoi dans Azure.
 
-Tu attribues un rôle à un utilisateur ou groupe sur :
-Un abonnement
-Un groupe de ressources
-Une ressource spécifique (ex : une VM)
+**Scope ou portée**
+Azure permet d'attribuer des rôles RBAC à un utilisateur ou groupe à trois niveaux:
+L’abonnement (toutes les ressources)
+Le groupe de ressources (ensemble logique de ressources)
+Une ressource individuelle (VM, base de données…)
+
 
 🔐 Rôles RBAC principaux :
-Rôle	                      Ce qu’il peut faire
-Lecteur	🔎                 Voir les ressources, mais ne peut rien modifier
-Contributeur	                 🛠️ Créer et modifier les ressources (mais ne peut pas donner des accès)
-Propriétaire	👑               A tous les droits, y compris la gestion des accès
 
+Lecteur: peut voir les ressources, lire la configuration, voir les métriques et journaux mais ne peut rien modifier ou créer quoi que ce soit
+Idéal pour les auditeurs, les observateurs, ou pour superviser sans risque.
+Contributeur: peut créer, modifier et supprimer les ressources (mais ne peut pas donner des accès)
+Propriétaire: peut tout faire, y compris la gestion des accès RBAC
 
 🧩 Exemple concret :
 Tu veux que :
 Julie puisse voir les machines virtuelles → Donne-lui le rôle de Lecteur
 Karim puisse créer et modifier des ressources → Donne-lui le rôle de Contributeur
 Sarah puisse gérer tout, y compris donner des accès → Donne-lui le rôle de Propriétaire
+
+ Attribuer un rôle RBAC dans Azure (via le Portail Azure)
+📍 Étapes simples :
+Connecte-toi au portail Azure
+👉 https://portal.azure.com
+Va sur la ressource concernée
+(exemple : une VM, un groupe de ressources, ou un abonnement)
+Clique sur "Contrôle d’accès (IAM)" dans le menu de gauche
+Clique sur "Ajouter" ➜ "Ajouter une attribution de rôle"
+Dans la fenêtre qui s’ouvre :
+Sélectionne le rôle que tu veux attribuer (ex : Lecteur, Contributeur, Propriétaire)
+Clique sur "Suivant"
+Sélectionne l’utilisateur ou le groupe à qui tu veux attribuer le rôle
+Tu peux rechercher un utilisateur, un groupe, ou un principal de service (application)
+Clique sur "Vérifier + attribuer"
+✅ C’est fait ! Le rôle est désormais appliqué à la bonne portée.
+
+
 
 🗂️ En résumé pour AZ-900 :
 Concept	Description simple
@@ -45,11 +64,9 @@ Quel rôle permet uniquement de voir sans modifier ?
 Le rôle Lecteur permet uniquement de consulter les ressources sans pouvoir les modifier.
 
 Quel rôle permet de créer et modifier mais pas gérer les accès ?
-Réponse : 
 Le rôle Contributeur peut créer et modifier des ressources mais ne peut pas gérer les accès ou les rôles.
 
 Qui peut gérer les accès aux ressources ?
-Réponse : C
 Le rôle Propriétaire a tous les droits, y compris la gestion des accès.
 
 🔹 Types d’offres Azure
