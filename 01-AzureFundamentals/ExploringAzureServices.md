@@ -94,13 +94,13 @@ Sotcker les sauvegardes
 Les utilisateurs accèdent au stockage epuis n’importe même en télétravail où comme un disque réseau (ex. : Z:\ ou \mystorageaccount.file.core.windows.net\documents) depuis Windows, macOS ou Linux via le protocole SMB. Pas besoin de VPN 
 
 3. **Queue Storage (Stockage de files d’attente)**
-Un service de files d'attente pour gérer les communications entre microservices d’une application.
+Un service de files d'attente pour gérer les communications entre microservices d’une application.      
 📌Cas d'utilisation : mise en file d'attente des envois d'emails de confirmation lors de la création de compte utilisateur.     
 mise en file d'attente des commandes passé sur un site pour traitements par un autre microservices
 
 4. **Table Storage (Stockage de tables)**
 Un servcie pour stocker des données à structure clé-valeur mais pas forcément un schéma rigide ou relationnel 
-Chaque ligne/entrée peut avoir des champs différents selon le besoin.     
+Chaque ligne/entrée peut avoir des champs différents selon le besoin.           
 📌 Exemples :
 Stocker des logs ou événements générés par une application.
 Gérer des profils utilisateurs simples pour une appli mobile.
