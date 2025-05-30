@@ -1,1 +1,40 @@
+**Azure Governance – Gouvernance dans Azure**
+La gouvernance Azure vous aide à contrôler, sécuriser, organiser et surveiller vos ressources cloud de manière cohérente et **conforme aux politiques** de l’entreprise.
 
+1. **Azure Policy** 
+Définit des règles pour les actions autorisées, interdites ou obligatoires dans un environnement Azure.
+📌 Exemples :
+Interdire la création de ressources dans une région spécifique (ex : "East Asia").
+Obliger le chiffrement des disques de toutes les VMs.
+Vérifier que les tags "Environnement" soient appliqués à chaque ressource.
+
+🔹 Initiative :
+Groupe de plusieurs politiques → utile pour appliquer un ensemble cohérent de règles.
+🧠 Retenir : Policy = une règle, Initiative = plusieurs règles
+
+2. **Role-Based Access Control (RBAC)**
+Définir qui peut faire quoi sur quelles ressources Azure.
+🔐 Principe :
+Qui : un utilisateur, un groupe ou un service
+Quoi : action autorisée (lire, modifier, supprimer)
+Où : portée (abonnement, groupe de ressources, ressource)
+
+📌 Rôles prédéfinis :
+Owner : tout faire, y compris accorder des accès
+Contributor : créer/modifier, mais pas gérer les accès
+Reader : lecture seule
+
+⚠️ Important pour la séparation des responsabilités
+
+3. **Azure Locks (Verrous)**
+ReadOnly : interdit la modification ou suppression
+CanNotDelete : autorise la modification, interdit la suppression
+🧠 Exemple :
+Empêcher qu’un compte de stockage critique soit supprimé par erreur → appliquer un verrou CanNotDelete.
+
+4. **Azure Advisor** – Assistant de recommandation
+Azure Advisor analyse vos ressources et fournit des recommandations pour :Sécurité,Haute disponibilité,Performance, Cout
+Excellence opérationnelle
+
+📌 Exemple :
+Advisor détecte une VM sous-utilisée → propose de la redimensionner pour économiser.
