@@ -10,16 +10,37 @@ Avant de commencer, assurez-vous d’avoir :
 Les services de calcul Azure exécutent des applications, hébergent des sites web, gèrent des conteneurs, ou encore traitent des données.
 
 1. **Azure Virtual Machines (VMs)**:   
-   Un ordinateur dans le cloud (PC ou un serveur physique) que tu peux démarrer, configurer et utiliser à distance.    
+Un service qui permet de créer et d'utiliser des ordinateurs virtuels sur Azure.
+C’est comme louer un ordinateur dans un datacenter Microsoft que vous configurer selon vos besoins (Windows, Linux, CPU, mémoire, disque, etc.).
+📌 Exemple concret :
+Vous avez un site web, une base de données ou une application qui doit tourner 24/7, mais vous ne voulez pas gérer un serveur physique chez vous ou dans vos locaux :
+✅ Solution :
+Vous créez une machine virtuelle sur Azure, avec :
+Windows Server 2022
+4 processeurs virtuels
+16 Go de RAM
+256 Go de disque
+Accès à distance (RDP ou SSH)
 
-2. **Azure App Service**:    
+Vous pouvez ensuite :
+Installer vos logiciels dessus
+Y accéder à distance depuis n’importe où
+L’arrêter ou la redémarrer à la demande
+
+💰 Facturation
+Vous payez à l’usage :
+À l’heure ou à la seconde
+Selon la taille de la VM (CPU, RAM, stockage)
+Possibilité d’éteindre la VM pour économiser 
+
+3. **Azure App Service**:    
    Un service pour deployer et pour héberger des applications web, des API ou des sites, sans avoir à gérer le serveur.
    Langages supportés: .NET, Java, Node.js, PHP, Python, Ruby    
 📌 Exemple concret :        
 Tu développes un petit site web en Python ou une API en Node.js.    
 💡 Tu déploies ton code directement sur Azure App Service. Azure s’occupe du reste (serveur, OS, patchs...).
 
-3. **Azure Functions**:         
+4. **Azure Functions**:         
 Un servcie pour exécuter des extraits de code en réponse à des événements    
 Un service serverless : tu écris juste le code qui doit s’exécuter quand un événement se produit, sans te soucier de l'infrastructure.          
 Événements déclenchés par des uploads, des messages, des planifications (cron)     
@@ -27,14 +48,14 @@ Un service serverless : tu écris juste le code qui doit s’exécuter quand un 
 À chaque fois qu’un fichier est ajouté dans Azure Blob Storage, tu veux analyser son contenu.
 💡 Tu crées une Azure Function qui se déclenche automatiquement dès qu’un fichier est ajouté.
 
-4. **Azure Container Instances (ACI)**: 
+5. **Azure Container Instances (ACI)**: 
 Un service pour exécuter un conteneur Docker, sans gérer un serveur.
 Pratique pour tester des images Docker    
 📌 Exemple concret :     
 Tu veux tester un microservice que tu as empaqueté dans un conteneur Docker.
 💡 Lance-le directement dans Azure Container Instances, sans te soucier de Kubernetes ou d'une VM.
 
-5. **Azure Kubernetes Service (AKS)**     
+6. **Azure Kubernetes Service (AKS)**     
 Un service pour deployer, exécuter et gerer des applications conteneurisées avec Kubernetes sans avoir à gérer toute l’infrastructure.   
 ✅ Avantages d’AKS :
 Plus besoin de gérer manuellement Kubernetes.
