@@ -128,65 +128,65 @@ Historique des commandes d’un utilisateur
 
 
 
-### 3. Services de réseautage
+### 3. Services rréseaux
 
 1. **Azure Virtual Network (VNet)**
- Un servcice pour crééer un réseau virtuel privé dans Azure, comme un réseau local d’entreprise, mais hébergé dans le cloud.
+ Un servcice pour créer un réseau virtuel privé dans Azure, comme un réseau local d’entreprise, mais hébergé dans le cloud.            
 ✅ Utilisé pour :Isoler et connecter des ressources Azure (VMs, bases, services...)
-📌 Exemple :
+📌 Exemple :    
 Tu crées deux VM dans Azure (serveur web + base de données)
 💡 Avec un VNet, tu l'assures que tes VM sont isolés du reste du cloud Azuret, qu’elles communiquent entre elles en privé, sans passer par Internet  et que personne d'autres que toi ne peut y acceder
 
 2. **Azure Network Security Groups (NSG)**
-Un servcie pour créer des pare-feux simples qui autorisent ou bloquent le trafic réseau vers ou depuis des ressources Azure.
+Un servcie pour créer des pare-feux simples qui autorisent ou bloquent le trafic réseau vers ou depuis des ressources Azure.       
 ✅ Utilisé pour :
 Protéger les VMs et sous-réseaux
 Contrôler les flux entrants/sortants
-📌 Exemple :
+📌 Exemple :       
 Tu veux qu’une VM n’accepte que le port 80 (web) et bloque le reste.
 💡 Tu configures un NSG pour filtrer le trafic réseau de cette VM.
 
 3. **Azure Load Balancer**
-Un service pour répartir automatiquement le trafic réseau entrant entre plusieurs serveurs pour une meilleure disponibilité.
-✅ Utilisé pour :Équilibrer la charge réseau sur plusieurs instances
-📌 Exemple :
+Un service pour répartir automatiquement le trafic réseau entrant entre plusieurs serveurs pour une meilleure disponibilité.     
+✅ Utilisé pour :Équilibrer la charge réseau sur plusieurs instances    
+📌 Exemple :    
 Ton site web reçoit beaucoup de trafic. Tu le déploies sur 3 VMs.
 💡 Azure Load Balancer répartit les visiteurs entre ces 3 serveurs pour éviter les surcharges.
 
  4. **Azure Application Gateway**
-Un load balancer intelligent de niveau 7 (couche applicative), qui comprend les requêtes HTTP/HTTPS, les URL
-✅ Utilisé pour :
+Un load balancer intelligent de niveau 7 (couche applicative), qui comprend les requêtes HTTP/HTTPS, les URL     
+✅ Utilisé pour :   
 Rediriger les requêtes selon l’URL
 Terminer le SSL (HTTPS)
 Protéger les applis avec le Web Application Firewall (WAF)
-📌 Exemple :
-Tu as deux applis web : /client et /admin.
+📌 Exemple :    
+Tu as deux applis web : /client et /admin.    
 💡 L’Application Gateway dirige /client vers une app A, /admin vers une app B. Il filtre aussi les attaques web grâce au WAF.
 
 5. **Azure VPN Gateway**
-Permet de créer une connexion VPN sécurisée entre ton réseau local (on-prem) et Azure.
-✅ Utilisé pour :
+Permet de créer une connexion VPN sécurisée entre ton réseau local (on-prem) et Azure.    
+✅ Utilisé pour :  
 Étendre ton réseau d’entreprise dans Azure
-Accéder à Azure depuis ton siège ou data center
-📌 Exemple :
-Tu veux que les utilisateurs au bureau accèdent aux ressources Azure comme s’ils étaient sur le même réseau.
+Accéder à Azure depuis ton siège ou data center    
+📌 Exemple :   
+Tu veux que les utilisateurs au bureau accèdent aux ressources Azure comme s’ils étaient sur le même réseau.   
 💡 Tu configures une VPN Gateway pour établir un tunnel chiffré avec Azure.
 
 6. **Azure ExpressRoute**
-Une connexion privée dédiée entre Azure et ton infrastructure locale, sans passer par Internet.
+Une connexion privée dédiée entre Azure et ton infrastructure locale, sans passer par Internet.   
 ✅ Utilisé pour :    
 Connexions critiques, très rapides et très fiables  
-Entreprises avec besoins élevés en bande passante   
-📌 Exemple :  
+Entreprises avec besoins élevés en bande passante      
+📌 Exemple :     
 Une banque héberge des bases de données sensibles sur site et veut les connecter à Azure.
 💡 Elle utilise ExpressRoute pour garantir fiabilité, sécurité et performance.
 
  7. **Azure DNS**
-Un service pour gérer des noms de domaine dans Azure, comme un serveur DNS classique.     
+Un service pour gérer des noms de domaine dans Azure, comme un serveur DNS classique.         
 ✅ Utilisé pour :    
 Gérer les noms de domaine de tes applications (ex : monapp.azurewebsites.net → IP)
 Rendre tes services accessibles via des noms personnalisés
-📌 Exemple :   
+📌 Exemple :      
 Tu veux que ton site soit accessible sur www.monsite.com.   
 💡 Tu utilises Azure DNS pour diriger ce nom vers ton service Azure.   
 
@@ -201,7 +201,7 @@ Tu veux contrôler toutes les connexions sortantes de tes VMs.
 💡 Tu places un Azure Firewall entre les VMs et Internet   
 
 9. **Azure Front Door**
-Un service d’optimisation du trafic web mondial avec accélération, WAF, caching, et HA.
+Un service d’optimisation du trafic web mondial avec accélération, WAF, caching, et HA.   
 ✅ Utilisé pour :
 Sites à fort trafic mondial
 Routage intelligent selon la géo de l’utilisateur
