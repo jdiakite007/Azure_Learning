@@ -28,7 +28,7 @@ NIST	Normes américaines pour protéger les systèmes informatiques	Utilisées p
 
 
 3. Microsoft Privacy Statement (Déclaration de confidentialité)
-C’est un document ooficiel clair de Microsoft qui explique:
+C’est un document officiel clair de Microsoft qui explique:
 Quelles données Microsoft collecte, comment et pourquoi.
 Ce qu’ils font avec tes données (Microsoft ne vend pas tes données, ne partage pas tes données avec des tiers sans ton consentement.
 Ce qu’ils ne font pas
@@ -37,65 +37,76 @@ Comment ils les protègent
 
 📌 Il garantit la transparence, le contrôle et la sécurité de tes données.
 
-🏛️ 4. Azure Trust Center
-➕ Ce que c’est :
-Un site web public qui centralise toutes les informations sur :
+4. **Trust Center (Centre de confiance)**
+Un site public de Microsoft pour expliquer :
+Comment ils protègent les données ( confidentialité
+Quelles règles de sécurité ils respectent  sécurité
+Comment ils gagnent la confiance des clients (conformité de Microsoft
 
-La sécurité
+🔗 Tu peux le consulter ici : https://www.microsoft.com/en-us/trust-center
 
-La confidentialité
-
-La conformité de Microsoft
-
-📍 trust.microsoft.com
-
-🔐 5. Service Trust Portal
-➕ Ce que c’est :
-Un portail sécurisé pour les clients Azure.
-
-On y trouve :
-
+5. Service Trust Portal
+Un espace privé (pour les clients Azure) où tu trouves :
+Tous les certificats de conformité
+Les rapports d’audit
+Les preuves que Microsoft suit bien les règles
 Des rapports de conformité détaillés
-
 Des audits indépendants
-
 Des modèles de confidentialité
-
 Les certifications officielles d’Azure
 
-💡 Accessible avec un compte Microsoft ou Azure AD.
+🔐 Tu dois te connecter avec ton compte Azure.
 
-📊 6. Compliance Manager
-➕ Ce que c’est :
-Un outil interactif pour :
 
-Évaluer la conformité de ton environnement Azure
+ 6. Compliance Manager
+C’est un outil interactif dans Azure qui t’aide à :
+Vérifier si ton entreprise respecte bien les règles (ex : RGPD)
+Avoir une checklist avec des actions recommandées à faire
+Suivre tes progrès
 
-Suivre les progrès
-
-Avoir des actions recommandées
 
 Exemple : "Activer le chiffrement pour être conforme au RGPD"
+
+7. Est-ce qu’Azure est conforme à mes besoins ?
+Pour savoir si Azure convient à ton secteur (santé, finance, etc.) :
+✅ Regarde dans le Service Trust Portal
+✅ Utilise Compliance Manager
+✅ Vérifie les normes (ISO, GDPR, etc.)
 
 🧩 7. Déterminer si Azure est conforme à un besoin métier
 📌 Étapes simples :
 Identifier la norme que ton entreprise doit respecter (ex : ISO 27001, HIPAA, RGPD)
-
 Vérifier sur le Service Trust Portal si Azure est certifié pour cette norme
-
 Utiliser Compliance Manager pour évaluer et mettre en œuvre les actions
 
 ✅ Oui, Azure est conforme à de très nombreux besoins métiers et industries
+
+ 8. Azure Government Cloud (USA)
+Une version spéciale d’Azure utilisée uniquement par :
+Les gouvernements américains
+Les agences de défense
+Des organisations ultra-sécurisées
+
+🔐 Séparé du cloud grand public + normes très strictes
+
 
 🏛️ 8. Azure Government Cloud
 ➕ Ce que c’est :
 Une version spéciale d’Azure pour le gouvernement des États-Unis
 
 Séparée du cloud public
-
 Conforme aux normes strictes fédérales US (FedRAMP, DoD)
-
 💡 Réservé aux agences gouvernementales et à leurs partenaires autorisés.
+
+🇨🇳 9. Azure China Cloud
+Une version d’Azure utilisée en Chine, opérée par un partenaire local : 21Vianet
+
+🔒 Elle :
+Suit les lois chinoises
+Est séparée du reste d’Azure
+Garde les données en Chine
+
+
 
 🇨🇳 9. Azure China Cloud
 ➕ Ce que c’est :
