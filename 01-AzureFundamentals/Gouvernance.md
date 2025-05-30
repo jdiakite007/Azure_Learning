@@ -1,5 +1,9 @@
 **Azure Governance – Gouvernance dans Azure**
-La gouvernance Azure vous aide à contrôler, sécuriser, organiser et surveiller vos ressources cloud de manière cohérente et **conforme aux politiques** de l’entreprise.
+Azure Governance – C’est quoi, en clair ?
+c’est l’ensemble des règles et outils qui t’aident à organiser, sécuriser et contrôler ce que les gens peuvent faire dans Azure, pour que **tout reste cohérent** et **conforme aux règles de ton entreprise**.
+Azure Governance, c’est comme une charte de bonne conduite + boîte à outils pour que ton cloud soit organisé, sécurisé, et contrôlé.
+
+ **Les outils principaux de la gouvernance Azure :**
 
 1. **Azure Policy** 
 Définit des règles pour les actions autorisées, interdites ou obligatoires dans un environnement Azure.
@@ -42,6 +46,7 @@ Advisor détecte une VM sous-utilisée → propose de la redimensionner pour éc
 
 5. **Azure Blueprints**
 Permet de déployer un ensemble complet de ressources + règles de gouvernance en un seul modèle.
+Créer un modèle prêt à l’emploi avec règles + ressources
 
 Contenu possible d’un Blueprint :
 Groupes de ressources
