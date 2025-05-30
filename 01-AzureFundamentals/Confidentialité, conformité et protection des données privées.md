@@ -1,27 +1,39 @@
 
+**Vie privée, conformité et protection des données dans Azur**
+
+1. Que veut dire "Conformité" dans Azure ?
+C’est le fait de respecter les lois et les règlemenatations sur la protection des données.
+
+Par exemple :
+Protéger les données personnelles
+Stocker les infos au bon endroit
+Ne pas donner accès à n’importe qui
+
+
+
 🔐 Comprendre la confidentialité, la conformité et la protection des données dans Azure
 ✅ 1. Principes généraux
 Microsoft Azure aide les entreprises à :
-
 Protéger leurs données
-
 Respecter les réglementations
-
 Conserver la confiance des clients
 
-📘 2. Termes de conformité à connaître
-Terme	Description simple	Exemple
-GDPR (RGPD)	Règlement européen sur la protection des données personnelles	Droit à l'effacement, consentement utilisateur
-ISO 27001	Norme internationale pour la sécurité de l'information	Azure est certifié ISO 27001
-NIST	Normes de sécurité des USA (National Institute of Standards and Technology)	Recommandations pour les agences gouvernementales américaines
+2. C’est quoi le GDPR, ISO, NIST ?
+Nom	Ce que c’est (simple)	À retenir
+GDPR (RGPD)	Loi européenne pour protéger les données des personnes	Droit à l’oubli, consentement, transparence
+ISO 27001	Règles de sécurité reconnues dans le monde entier	=> Azure est certifié ISO 27001
+NIST	Normes américaines pour protéger les systèmes informatiques	Utilisées par les gouvernements US
 
-✅ Azure est conforme à plus de 100 normes internationales (santé, finance, gouvernement, etc.)
+✅ Azure respecte toutes ces normes et d’autres encore (plus de 100 !)santé, finance, gouvernement, etc.)
 
-🔍 3. Microsoft Privacy Statement
-➕ Ce que c’est :
-Document officiel expliquant quelles données Microsoft collecte, comment et pourquoi.
 
-Microsoft ne partage pas tes données avec des tiers sans ton consentement.
+3. Microsoft Privacy Statement (Déclaration de confidentialité)
+C’est un document ooficiel clair de Microsoft qui explique:
+Quelles données Microsoft collecte, comment et pourquoi.
+Ce qu’ils font avec tes données (Microsoft ne vend pas tes données, ne partage pas tes données avec des tiers sans ton consentement.
+Ce qu’ils ne font pas
+Comment ils les protègent
+
 
 📌 Il garantit la transparence, le contrôle et la sécurité de tes données.
 
