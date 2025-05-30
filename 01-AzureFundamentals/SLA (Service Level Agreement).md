@@ -33,21 +33,19 @@ SLA global = 0.9995 × 0.9999 × 0.999 = 0.9984 ≈ 99.84 %
 
 ⚠️ Si l’un des services tombe, ton application peut ne plus fonctionner. C’est pourquoi on multiplie les SLA.
 
-✅ Fiche pratique SLA (AZ-900)
-📌 Définitions clés :
-Terme	Signification
-SLA (Service Level Agreement)  = Pomesse ou garantie disponibilité d’un service Azure (en %) ou Temps d’indisponibilité max	Durée maximale de panne autorisée 
+📌 Définitions clés :      
+SLA (Service Level Agreement)  = Pomesse ou garantie disponibilité d’un service Azure (en %) ou Temps d’indisponibilité ou	Durée maximale de panne autorisée 
 SLA individuel =	SLA spécifique à un service (ex : Azure SQL = 99,99 %)
 SLA global / composite	Calculé si plusieurs services sont utilisés ensemble → Produit des SLAs
 Plus le SLA est élevé, plus le service est fiable, mais souvent plus coûteux.
 
 📊 Temps d’indisponibilité selon SLA (par mois)
-SLA (%)	Temps d'arrêt autorisé (par mois)
-99.0 %	~7 h 18 min
-99.9 %	~43 min
-99.95 %	~21 min
-99.99 %	~4 min
-100 %	0 min
+SLA (%)	              Temps d'arrêt autorisé (par mois)
+99.0 %	                 ~7 h 18 min
+99.9 %	                  ~43 min
+99.95 %	                     ~21 min
+99.99 %	                    ~4 min
+100 %	                         0 min
 
 Tu peux améliorer le SLA global en répliquant ou en utilisant des services haute disponibilité.
 
