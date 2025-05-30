@@ -1,9 +1,9 @@
 1. Comprendre les types de support
 Il existe 5 niveaux de support selon les besoins de l’entreprise: (Basic, Dev, Standard, ProDirect, Premier)
 
-**Basic (gratuit)**	 : pour tous les clients Azure => 	Accès à la documentation, forums, Azure Health 
-**Developer**	: pour les devs/test non critiques =>	Réponse en 24h, ticket technique, support via email
-**Standard**	: recommandé pour la production => 	Réponse plus rapide, support 24/7, web + téléphone
+**Basic (gratuit)**	 : pour tous les clients Azure => 	Accès à la documentation, forums, Azure Health       
+**Developer**	: pour les devs/test non critiques =>	Réponse en 24h,  posibilté d'ouvrir un ticket, support via email
+**Standard**	:  pour la production => 	Réponse plus rapide, support 24/7, web + téléphone
 **Professional Direct	Entreprises**: pour les environnements critiques => Réponse en 1h max, gestionnaire de service dédié, support prioritaire
 **Premier** pour les grandes entreprises	=> Personnalisé, accès à un TAM (Technical Account Manager)
 
