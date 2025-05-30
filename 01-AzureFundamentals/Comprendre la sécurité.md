@@ -65,3 +65,76 @@ Standard : protection avancée, alertes, analyses post-attaque, SLA.
 ➤ Exemple :
 Une application web critique subit une attaque DDoS : Azure DDoS Standard absorbe le trafic anormal.
 Utilisation typique : Applis critiques, e-commerce, services publics.
+
+
+ **outils et fonctionnalités de sécurité** 
+Azure fournit plusieurs outils intégrés pour :
+Protéger les ressources,
+Gérer les secrets,
+Surveiller les menaces,
+Appliquer des stratégies de sécurité
+
+ **Microsoft Defender for Cloud)**
+
+Plateforme de gestion unifiée de la sécurité dans Azure (et hybride).
+Elle permet de :
+Évaluer la sécurité des ressources,
+Recevoir des recommandations,
+Détecter les menaces.
+
+➤ Fonctions clés :
+Secure Score (évaluation du niveau de sécurité)
+Recommandations de configuration
+Intégration avec Azure Defender pour protection avancée
+
+➤ Exemple :
+Une VM sans pare-feu est détectée → le Security Center vous alerte et propose de corriger la configuration.
+
+
+💡 Utile pour tous les types d’entreprise : surveillance en temps réel, conformité ISO/GDPR.
+
+**Azure Key Vault**
+➤ Définition :
+Service pour gérer et protéger les secrets, comme :
+Mots de passe
+Clés API
+Certificats
+Clés de chiffrement
+
+➤ Fonctions :
+Chiffrement matériel (HSM)
+Contrôle d’accès avec RBAC
+Journalisation des accès via Azure Monitor
+
+➤ Exemple :
+Une application web stocke une clé d’API dans Key Vault au lieu de la mettre dans le code source.
+
+**Azure Information Protection (AIP)**
+➤ Définition :
+Service de classification et de protection des documents.
+
+➤ Fonctionnalités :
+Étiquetage automatique ou manuel des documents (ex : "Confidentiel")
+Chiffrement intégré
+Contrôle d’accès même après partage
+
+➤ Exemple :
+Un employé télécharge un document "Confidentiel" → il est automatiquement chiffré et limité aux membres de l’organisation.
+
+🔒AIP travaille avec Microsoft 365 pour appliquer la protection dans Word, Excel, Outlook, etc.
+
+Microsoft Defender for Identity
+➤ Définition :
+Outil de détection d'attaques ciblées basées sur l'identité (contre Azure AD ou AD local).
+
+➤ Fonctions :
+Analyse du trafic réseau
+Détection d’activités suspectes : Pass-the-Hash, reconnaissance, exfiltration
+Alertes en temps réel
+
+➤ Exemple :
+ATP détecte une tentative de connexion à répétition d’un compte admin depuis un autre pays → envoie une alerte de compromission.
+
+
+
+
