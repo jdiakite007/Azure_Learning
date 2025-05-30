@@ -25,6 +25,10 @@ Comprendre les problèmes	                      "Pourquoi mon app a planté ?"
 Automatiser des actions	                            "Redémarrer le service si erreur critique"
 
 2. **Azure Service Health**
+c'est un service qui :
+T’informe quand Azure a un problème (panne, alertes régionales)
+T’avertit des maintenances prévues
+T’aide à comprendre l’impact sur tes services => Intereruption de services possibles
 Azure Service Health vous informe de l’état des services Azure que vous utilisez : pannes, maintenance planifiée, alertes régionales.
 Etre informé des interruptions Azure
 🧰 Fonctionnalités principales :
