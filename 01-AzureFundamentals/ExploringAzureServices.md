@@ -36,22 +36,25 @@ Tu veux tester un microservice que tu as empaqueté dans un conteneur Docker.
 💡 Lance-le directement dans Azure Container Instances, sans te soucier de Kubernetes ou d'une VM.
 
 5. **Azure Kubernetes Service (AKS)**
-Une plateforme complète pour gérer des applications conteneurisées à grande échelle, avec Kubernetes.       
+Un service pour exécuter des applications conteneurisées à l’aide de Kubernetes sans avoir à gérer vous-même toute l’infrastructure.
+
+🧠 En résumé :
+AKS = Kubernetes dans le cloud, géré par Azure (moins de configuration, moins d'administration).     
 📌 Exemple concret :
 Une entreprise gère 20 microservices dans des conteneurs.
 💡 Elle utilise AKS pour les déployer, les faire évoluer automatiquement, et surveiller leur état.     
    Gère automatiquement le déploiement, le scaling et les mises à jour
 
-6. **Azure Batch**
+7. **Azure Batch**
 Un service pour exécuter un grand nombre de tâches en parallèle (traitements lourds, calculs scientifiques, rendu vidéo...).
 Gère automatiquement les VMs nécessaires
 📌 Exemple concret :
 Tu dois traiter 10 000 images avec un script Python.
 💡 Utilise Azure Batch pour répartir le traitement sur plusieurs machines en parallèle.
 
-7. **Azure DevTest Labs**
-Un service pour créer rapidement des environnements de test ou développement, sans dépasser ton budget.
-✅ Idéal pour :
+8. **Azure DevTest Labs**
+Un service pour créer rapidement des environnements de test ou développement, sans dépasser ton budget.     
+✅ Idéal pour :      
 Tester une appli sans perturber l’environnement de prod
 Limiter le temps d’utilisation automatique (auto shutdown)
 📌 Exemple concret :
@@ -61,15 +64,12 @@ Ton équipe de dev veut tester différentes versions d’un logiciel.
 
 ### 2. Services de stockage
 
-Sur Microsoft Azure, il existe quatre grands types de services de stockage, chacun adapté à des besoins différents.
+Il existe quatre grands types de services de stockage, chacun adapté à des besoins différents.    
 
-1. Blob Storage (Stockage d’objets)      
-✅ Idéal pour : Stocker des fichiers non structurés, telles que des images, desvidéos, des PDF,des sauvegardes etc.    
-📌 Exemples :
-Sauvegarder des vidéos d'une caméra de surveillance,stocker des images pour un site web,héberger des backups d'applications.         
-📦 Caractéristiques : Gèrer de grands volumes de données non structurées.    
+1. **Blob Storage (Stockage d’objets)**      
+Un service pour stocker et gérer de grands volumes de données non structurées telles que des images, des vidéos, des PDF, des sauvegardes etc.    
 
-Les fichiers sont stockés sous forme de blobs (Binary Large OBjects) qyuiu sont de trois types:  Block Blobs, Append Blobs, Page Blobs.    
+Les fichiers sont stockés sous forme de blobs (Binary Large OBjects) qui sont de trois types:  Block Blobs, Append Blobs, Page Blobs.    
 
 2. File Storage (Stockage de fichiers Azure Files)     
 📁 Azure Files = serveur de fichiers dans le cloud     
