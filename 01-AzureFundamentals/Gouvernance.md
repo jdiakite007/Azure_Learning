@@ -16,11 +16,11 @@ Du gaspillage de budget
 Des risques de sécurité    
 Le non-respect des lois ou politiques internes    
 
-Avec une bonne gouvernance :
-✅ Les règles sont claires
-✅ Les accès sont bien gérés
-✅ Les ressources sont bien utilisées
-✅ L’entreprise est conforme aux normes      
+Avec une bonne gouvernance :     
+✅ Les règles sont claires       
+✅ Les accès sont bien gérés       
+✅ Les ressources sont bien utilisées      
+✅ L’entreprise est conforme aux normes              
 
 
 **Tableau des outils de gouvernance Azure**
@@ -35,38 +35,21 @@ Avec une bonne gouvernance :
  **Les outils principaux de la gouvernance Azure :**
 
 1. **Azure Policy**          
-Azure Policy permet de **créer et appliquer des règles (policy) en temps réel sur tes ressources** pour s'asdsurer qu’elles **respectent les standards et conformités** de l'entreprise
+Azure Policy permet de **créer et appliquer des règles (policy)** en temps réel sur tes ressources pour s'asssurer qu’elles **respectent les standards et conformités** de l'entreprise
 
-Azure Policy =  Contrôle de conformité en temps réel + Actions bloquantes ou correctrices => Automatiser la conformité des ressources
+Azure Policy permet de:              
+Automatiser la conformité des ressources       
+Effectuer un contrôle de conformité en temps réel    
+Bloquer le deploiement ou de deployer des actions correctrices    
 
 En cas de non conformité:     
-La réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.     
+La réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.          
 
-Voici les comportements possibles👇    
-
-🛑 Effet : Deny (refus)
-Résultat : Le déploiement de la ressource est bloqué.
-📌 C’est utilisé quand on veut forcer le respect strict de la règle.   
-
-📋 Effet : Audit
-Résultat : Azure laisse passer la ressource, mais elle est signalée dans le rapport de conformité.
-📌 Pratique pour observer sans bloquer.     
-Tu ne veux pas bloquer les gens, mais tu veux savoir qui ne respecte pas la règle.     
-Idéal pour surveiller sans empêcher les utilisateurs.     
-
-➕ Effet : Append
-Résultat : Azure ajoute automatiquement un paramètre manquant" avec une valeur prédéfinie (ex : "NonSpécifié").
-📌 Utile pour enrichir les ressources sans les bloquer.
-
-🔧 Effet : DeployIfNotExists
-Résultat : Azure déclenche un déploiement correctif, par exemple un script qui ajoute un paramètre manquant.
-📌 Utilisé quand on veut corriger automatiquement les non-conformités.
-
-En résumé :    
-Deny:	Bloque la création de ressources non conforme.
-Audit:	Laisse passer mais signale seulement
-Append:	corrige en ajoutant un paramètre dans la ressourceavec une valeur automatique
-DeployIfNotExists: corrige en déployant une solution /déploie une action corrective 
+Voici les effets possibles👇      
+**Effet Deny (refus)**:	Bloque la création de ressources non conforme (=> pour forcer le respect strict de la règle)
+**Effet Audit**:	Laisse passer la ressource non-conforme mais elle est signalée dans le rapport de conformité (=> savoir qui ne respecte pas la règle mais sans bloquer les utilisateurs).     
+**Append**:	corrige automatiquement les non-conformités en ajoutant un paramètre manquant dans la ressource 
+**DeployIfNotExists**: corrige automatquement les non-conformités en déployant un correctif  / déploie une action corrective, par exemple un script
 
 
 Azure Policy ne fait pas qu’auditer. Elle peut bloquer, corriger ou enrichir les ressources selon l’effet choisi dans la règle.
