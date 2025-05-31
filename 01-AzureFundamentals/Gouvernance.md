@@ -29,7 +29,7 @@ Avec une bonne gouvernance :
 |  Outil	        |  Rôle principal                 |    Exemple    |
 |-----------------|----------------                 |----------------|
 | Azure Policy   | Appliquer automatiquement des règles	  | Interdire le déploiement de VMs hors d'Europe    |
-| Contenu 2.1    | Contenu 2.2    | Contenu 2.3    |
+| RBAC (Role-Based Access Control)	   | Gérer qui peut faire quoi   | Un développeur peut lire une base mais pas la supprimer   |
 | Contenu 3.1    | Contenu 3.2    | Contenu 3.3    |
 
 
