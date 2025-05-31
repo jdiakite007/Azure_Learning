@@ -67,10 +67,10 @@ Initiative = Un groupe de plusieurs politiques (ex : tout un pack de règles sé
 2. **Role-Based Access Control (RBAC) ou contrôle d’accès basé sur les rôles)**
 C'est un outil pour gérer finement qui a accès à quelles ressources, et avec quel niveau de permissions (ce qu’ils peuvent faire avec).      
 
-🧩 Principe RBAC = QUI peut faire QUOI et OÙ ?     
-Qui: 	Un utilisateur, un groupe, une application     
-Quoi:	Lire, modifier, supprimer, gérer les accès…     
-Où:	Niveau de portée : Abonnement / Groupe de ressources / Ressource individuelle   
+Principe RBAC = QUI peut faire QUOI et OÙ ?          
+Qui: 	Un utilisateur, un groupe, une application          
+Quoi:	Lire, modifier, supprimer, gérer les accès…          
+Où:	Niveau de portée : Abonnement / Groupe de ressources / Ressource individuelle       
 
 📌 Rôles prédéfinis :
 Owner : tout faire, y compris accorder des accès
