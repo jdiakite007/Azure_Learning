@@ -59,14 +59,8 @@ Owner : tout faire, y compris accorder des accès
 Contributor : créer/modifier, mais pas gérer les accès
 Reader : lecture seule
 
-⚠️ Important pour la séparation des responsabilités
 
 3. **Azure Locks (Verrous)**
- 
-ReadOnly : interdit la modification ou suppression
-CanNotDelete : autorise la modification, interdit la suppression
-🧠 Exemple :
-Empêcher qu’un compte de stockage critique soit supprimé par erreur → appliquer un verrou CanNotDelete.
 
 | Lock        |  Rôle principal                 |    Exemple    |
 |-----------------|----------------                 |----------------|
@@ -74,12 +68,15 @@ Empêcher qu’un compte de stockage critique soit supprimé par erreur → appl
 | ReadOnly    | lecture mais pas modification ou suppression   | Un développeur peut lire une base mais pas la supprimer   |
 
 
-5. **Azure Advisor** – Assistant de recommandation
-Azure Advisor analyse vos ressources et fournit des recommandations pour :Sécurité,Haute disponibilité,Performance, Cout
-Excellence opérationnelle
+5. **Azure Advisor** 
+C'est un outils gratuit qui t’aide à **améliorer ton environnement Azure** 
+Il analyse automatiquement tes ressources et te donne des recommandations pour améliorer leur :   
+🔒 Sécurité  Ex: Activer Azure Defender, corriger des ports ouverts   
+⚙️ Haute disponibilité    Ex: Des ressources ne sont pas redondées	 => Ajouter des groupes de disponibilité pour les VMs critiques
+⚡ Performance   Ex: Passer une base de données lente sur un niveau supérieur
+💰 Coût   Ex: Supprimer des disques non utilisés, réduire la taille d’une VM pour économiser, stopper une VM inutilisée
+🧰 Excellence opérationnelle   Ex: Mettre à jour les tags, organiser les ressources, planifier les sauvegardes
 
-📌 Exemple :
-Advisor détecte une VM sous-utilisée → propose de la redimensionner pour économiser.
 
 
 5. **Azure Blueprints**
