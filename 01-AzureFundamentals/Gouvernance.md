@@ -1,13 +1,13 @@
 **Azure Governance**
 
-La gouvernance Azure, c’est un ensemble de règles et d’outils qui te permettent de :    
+La gouvernance Azure, c’est un **ensemble de règles** et **d’outils** qui te permettent de :    
 ✅ Organiser    
 ✅ Contrôler     
 ✅ Sécuriser     
 ✅ Surveiller     
 ...tes ressources cloud de **manière structurée** et **conforme aux règles de l’entreprise**.    
 
-C'est comme une charte de bonne conduite + boîte à outils pour que ton cloud soit organisé, sécurisé, et contrôlé.   
+C'est comme une charte de bonne conduite + boîte à outils pour organiser, sécuriser, et contrôler tes ressources Cloud.   
 
 **Pourquoi c’est important** ?   
 Sans gouvernance, on risque :    
@@ -32,16 +32,27 @@ Avec une bonne gouvernance :
 |Azure Advisor	  |Recommander des améliorations  |Suggère de supprimer une VM qui ne sert plus  |
 |Blueprints	  |Déployer des environnements prédéfinis  |Créer un environnement complet (réseau + règles + VMs) d’un coup |
 
-
-
  **Les outils principaux de la gouvernance Azure :**
 
-1. **Azure Policy** 
+1. **Azure Policy**
+Azure Policy te permet de **créer et appliquer des règles automatiques (policy) sur tes ressources** pour qu’elles **respectent les standards et conformités** de
+C’est un contrôle de conformité en temps réel.
 Définit des règles pour les actions autorisées, interdites ou obligatoires dans un environnement Azure.
+📌 Exemples de politiques Azure :
+🌐 Politique	🛠️ Effet
+❌ Interdire les déploiements de ressources hors de "France Central"	=> Empêcher les utilisateurs de créer des ressources ailleurs
+🔒 Chiffrement obligatoire des disques de toutes leds VM => 	Forcer l’activation du chiffrement au niveau de la VM
+🏷️ Vérifier la présence de tags => 	S’assurer que chaque ressource est bien étiquetée (ex : prod/dev/test)
+📎 Forcer un SKU spécifique pour les VMs (ex : taille D2s)	=> Contrôler les types autorisés
+🔄 Auditer l’usage d’un service obsolète	=> Génère des alertes sans bloquer
 📌 Exemples :
-Interdire la création de ressources dans une région spécifique (ex : "East Asia").
-Obliger le chiffrement des disques de toutes les VMs.
-Vérifier que les tags "Environnement" soient appliqués à chaque ressource.
+|  Policy      |  Effet                |   
+|-----------------|----------------                 |
+| Interdire les déploiements de ressources hors de "France Central   |  Empêcher les utilisateurs de créer des ressources ailleurs  |
+| Chiffrement obligatoire des disques de toutes leds VM | Forcer l’activation du chiffrement au niveau de la VM  | 
+|Vérifier la présence de tags|S’assurer que chaque ressource est bien étiquetée (ex : prod/dev/test)  |
+|Forcer un SKU spécifique pour les VMs (ex : taille D2s) |Contrôler les types autorisés |
+|Auditer l’usage d’un service obsolète  |Génère des alertes sans bloquer |
 
 🔹 Initiative :
 Groupe de plusieurs politiques → utile pour appliquer un ensemble cohérent de règles.
