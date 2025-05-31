@@ -36,23 +36,19 @@ Avec une bonne gouvernance :
 
 1. **Azure Policy**
               
-C'est un outil qui permet de **créer et appliquer des règles** pour s'asssurer que ce qui est fait dans Azure  **respectent les standards et conformités** de l'entreprise.
+C'est un outil qui permet de **créer et appliquer des règles** pour s'asssurer que ce qui est fait dans Azure **respectent les standards et conformités** de l'entreprise.
 
 Azure Policy permet de:              
 * auditer en temps réél la conformité des ressources par un contrôle de conformité en temps réel    
 * Bloquer le deploiement ou de deployer des actions correctrices    
 
-En cas de non conformité:     
-La réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.          
+En cas de non conformité, la réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.          
 
 Voici les effets possibles👇      
 **Effet Deny (refus)**:	Bloque la création de ressources non conforme (=> pour forcer le respect strict de la règle)
 **Effet Audit**:	Laisse passer la ressource non-conforme mais elle est signalée dans le rapport de conformité (=> savoir qui ne respecte pas la règle mais sans bloquer les utilisateurs).     
 **Append**:	corrige automatiquement les non-conformités en ajoutant un paramètre manquant dans la ressource 
 **DeployIfNotExists**: corrige automatquement les non-conformités en déployant un correctif  / déploie une action corrective, par exemple un script
-
-
-Azure Policy ne fait pas qu’auditer. Elle peut bloquer, corriger ou enrichir les ressources selon l’effet choisi dans la règle.
 
 📌 Exemples de politiques Azure :
 
@@ -63,26 +59,23 @@ Azure Policy ne fait pas qu’auditer. Elle peut bloquer, corriger ou enrichir l
 | Forcer (Bloquer) un SKU spécifique pour les VMs (ex : taille D2s) |Contrôler les types autorisés)|
 | Forcer (append) Vérifier la présence de tags |Ajouter automatiquement un tag à une ressource (ex : prod/dev/test)|
 | Auditer l’usage d’un service obsolète |Génère des alertes sans bloquer|
-
    
 **Initiative vs. Politique** ?
 Politique = Une règle unique     
 Initiative = Un groupe de plusieurs politiques (ex : tout un pack de règles sécurité pour les VM)→ utile pour appliquer un ensemble cohérent de règles.
 
+2. **Role-Based Access Control (RBAC) ou contrôle d’accès basé sur les rôles)**
+C'est un outil pour gérer finement qui a accès à quelles ressources, et avec quel niveau de permissions (ce qu’ils peuvent faire avec).      
 
-2. **Role-Based Access Control (RBAC)**
-Un outil pour gérer finement qui a accès à quelles ressources, et avec quel niveau de permissions.  
-
-🔐 Principe :
-Qui : un utilisateur, un groupe ou un service
-Quoi : action autorisée (lire, modifier, supprimer)
-Où : portée (abonnement, groupe de ressources, ressource)
+🧩 Principe RBAC = QUI peut faire QUOI et OÙ ?     
+Qui: 	Un utilisateur, un groupe, une application     
+Quoi:	Lire, modifier, supprimer, gérer les accès…     
+Où:	Niveau de portée : Abonnement / Groupe de ressources / Ressource individuelle   
 
 📌 Rôles prédéfinis :
 Owner : tout faire, y compris accorder des accès
 Contributor : créer/modifier, mais pas gérer les accès
 Reader : lecture seule
-
 
 3. **Azure Locks (Verrous)**
 
