@@ -30,7 +30,9 @@ Avec une bonne gouvernance :
 |-----------------|----------------                 |----------------|
 | Azure Policy   | Appliquer automatiquement des règles	  | Interdire le déploiement de VMs hors d'Europe    |
 | RBAC (Role-Based Access Control)	   | Gérer qui peut faire quoi   | Un développeur peut lire une base mais pas la supprimer   |
-| Contenu 3.1    | Contenu 3.2    | Contenu 3.3    |
+|Locks   |Bloquer les modifications ou suppressions   |Empêcher la suppression d’une ressource critique  |
+|Azure Advisor	  |Recommander des améliorations  |Suggère de supprimer une VM qui ne sert plus  |
+
 
 
 
