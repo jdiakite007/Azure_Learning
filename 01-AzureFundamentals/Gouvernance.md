@@ -70,8 +70,8 @@ Empêcher qu’un compte de stockage critique soit supprimé par erreur → appl
 
 | Lock        |  Rôle principal                 |    Exemple    |
 |-----------------|----------------                 |----------------|
-|CanNotDelete  | autorise la modification, interdit la suppression  |Empêcher qu’un compte de stockage critique soit supprimé par erreur → appliquer un verrou Ca|
-| ReadOnly    | interdit la modification ou suppression   | Un développeur peut lire une base mais pas la supprimer   |
+|CanNotDelete  | modification mais pas suppression  |Empêcher qu’un compte de stockage critique soit supprimé par erreur|
+| ReadOnly    | lecture mais pas modification ou suppression   | Un développeur peut lire une base mais pas la supprimer   |
 
 
 5. **Azure Advisor** – Assistant de recommandation
