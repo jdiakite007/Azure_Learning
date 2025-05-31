@@ -44,8 +44,8 @@ Azure Policy permet de:
 En cas de non conformité, la réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.          
 
 Voici les effets possibles👇      
-* Effet Deny (refus):	Bloque la création de ressources non conforme (=> pour forcer le respect strict de la règle)        
-* Effet Audit:	Laisse passer la ressource non-conforme mais elle est signalée dans le rapport de conformité (=> savoir qui ne respecte pas la règle mais sans bloquer les utilisateurs).           
+* Deny (refus):	Bloque la création de ressources non conforme (=> pour forcer le respect strict de la règle)        
+* Audit:	Laisse passer la ressource non-conforme mais elle est signalée dans le rapport de conformité (=> savoir qui ne respecte pas la règle mais sans bloquer les utilisateurs).           
 * Append:	corrige automatiquement les non-conformités en ajoutant un paramètre manquant dans la ressource.         
 * DeployIfNotExists: corrige automatquement les non-conformités en déployant un correctif  / déploie une action corrective, par exemple un script.        
 
