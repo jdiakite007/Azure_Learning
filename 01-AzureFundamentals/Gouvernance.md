@@ -47,7 +47,7 @@ Définit des règles pour les actions autorisées, interdites ou obligatoires da
 🔄 Auditer l’usage d’un service obsolète	=> Génère des alertes sans bloquer
 📌 Exemples :
 |  Policy      |  Effet                |   
-|-----------------|----------------                 |
+|-----------------|----------------    |
 | Interdire les déploiements de ressources hors de "France Central   |  Empêcher les utilisateurs de créer des ressources ailleurs  |
 | Chiffrement obligatoire des disques de toutes leds VM | Forcer l’activation du chiffrement au niveau de la VM  | 
 |Vérifier la présence de tags|S’assurer que chaque ressource est bien étiquetée (ex : prod/dev/test)  |
