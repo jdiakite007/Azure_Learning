@@ -34,11 +34,12 @@ Avec une bonne gouvernance :
 
  **Les outils principaux de la gouvernance Azure :**
 
-1. **Azure Policy**          
-C'est un outil qui permet de **créer et appliquer des règles** pour s'asssurer que ce qui est fait dans Azure  **respectent les standards et conformités** de l'entreprise
+1. **Azure Policy**
+              
+C'est un outil qui permet de **créer et appliquer des règles** pour s'asssurer que ce qui est fait dans Azure  **respectent les standards et conformités** de l'entreprise.
 
 Azure Policy permet de:              
-* auditer en temps réél la conformité des ressources ( s'assurer de la conformité) par un contrôle de conformité en temps réel    
+* auditer en temps réél la conformité des ressources par un contrôle de conformité en temps réel    
 * Bloquer le deploiement ou de deployer des actions correctrices    
 
 En cas de non conformité:     
