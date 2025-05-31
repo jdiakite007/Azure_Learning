@@ -34,29 +34,58 @@ Avec une bonne gouvernance :
 
  **Les outils principaux de la gouvernance Azure :**
 
-1. **Azure Policy**
-Azure Policy te permet de **créer et appliquer des règles automatiques (policy) sur tes ressources** pour qu’elles **respectent les standards et conformités** de
-C’est un contrôle de conformité en temps réel.
-Définit des règles pour les actions autorisées, interdites ou obligatoires dans un environnement Azure.
-📌 Exemples de politiques Azure :
-🌐 Politique	🛠️ Effet
-❌ Interdire les déploiements de ressources hors de "France Central"	=> Empêcher les utilisateurs de créer des ressources ailleurs
-🔒 Chiffrement obligatoire des disques de toutes leds VM => 	Forcer l’activation du chiffrement au niveau de la VM
-🏷️ Vérifier la présence de tags => 	S’assurer que chaque ressource est bien étiquetée (ex : prod/dev/test)
-📎 Forcer un SKU spécifique pour les VMs (ex : taille D2s)	=> Contrôler les types autorisés
-🔄 Auditer l’usage d’un service obsolète	=> Génère des alertes sans bloquer
-📌 Exemples :
-|  Policy      |  Effet                |   
-|-----------------|----------------    |
-| Interdire les déploiements de ressources hors de "France Central   |  Empêcher les utilisateurs de créer des ressources ailleurs  |
-| Chiffrement obligatoire des disques de toutes leds VM | Forcer l’activation du chiffrement au niveau de la VM  | 
-|Vérifier la présence de tags|S’assurer que chaque ressource est bien étiquetée (ex : prod/dev/test)  |
-|Forcer un SKU spécifique pour les VMs (ex : taille D2s) |Contrôler les types autorisés |
-|Auditer l’usage d’un service obsolète  |Génère des alertes sans bloquer |
+1. **Azure Policy**          
+Azure Policy permet de **créer et appliquer des règles (policy) en temps réel sur tes ressources** pour s'asdsurer qu’elles **respectent les standards et conformités** de l'entreprise
 
-🔹 Initiative :
-Groupe de plusieurs politiques → utile pour appliquer un ensemble cohérent de règles.
-🧠 Retenir : Policy = une règle, Initiative = plusieurs règles
+Azure Policy =  Contrôle de conformité en temps réel + Actions bloquantes ou correctrices => Automatiser la conformité des ressources
+
+En cas de non conformité:     
+La réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.     
+
+Voici les comportements possibles👇    
+
+🛑 Effet : Deny (refus)
+Résultat : Le déploiement de la ressource est bloqué.
+📌 C’est utilisé quand on veut forcer le respect strict de la règle.   
+
+📋 Effet : Audit
+Résultat : Azure laisse passer la ressource, mais elle est signalée dans le rapport de conformité.
+📌 Pratique pour observer sans bloquer.     
+Tu ne veux pas bloquer les gens, mais tu veux savoir qui ne respecte pas la règle.     
+Idéal pour surveiller sans empêcher les utilisateurs.     
+
+➕ Effet : Append
+Résultat : Azure ajoute automatiquement un paramètre manquant" avec une valeur prédéfinie (ex : "NonSpécifié").
+📌 Utile pour enrichir les ressources sans les bloquer.
+
+🔧 Effet : DeployIfNotExists
+Résultat : Azure déclenche un déploiement correctif, par exemple un script qui ajoute un paramètre manquant.
+📌 Utilisé quand on veut corriger automatiquement les non-conformités.
+
+En résumé :    
+Deny:	Bloque la création de ressources non conforme.
+Audit:	Laisse passer mais signale seulement
+Append:	corrige en ajoutant un paramètre dans la ressourceavec une valeur automatique
+DeployIfNotExists: corrige en déployant une solution /déploie une action corrective 
+
+
+Azure Policy ne fait pas qu’auditer. Elle peut bloquer, corriger ou enrichir les ressources selon l’effet choisi dans la règle.
+
+📌 Exemples de politiques Azure :
+
+| Policy      | Effet      |
+|------------------|-----------------|
+| Interdire (Bloquer) les déploiements de ressources hors de "France Central   |Empêcher les utilisateurs de créer des ressources ailleurs  |
+| Imposer (obliger) Chiffrement obligatoire des disques des VM | Forcer le chiffrement des disques  |
+| Forcer (Bloquer) un SKU spécifique pour les VMs (ex : taille D2s) |Contrôler les types autorisés)|
+| Forcer (append) Vérifier la présence de tags |Ajouter automatiquement un tag à une ressource (ex : prod/dev/test)|
+| Auditer l’usage d’un service obsolète |Génère des alertes sans bloquer|
+
+   
+**Initiative vs. Politique** ?
+Politique = Une règle unique     
+Initiative = Un groupe de plusieurs politiques (ex : tout un pack de règles sécurité pour les VM)→ utile pour appliquer un ensemble cohérent de règles.
+
 
 2. **Role-Based Access Control (RBAC)**
 Définir qui peut faire quoi sur quelles ressources Azure.
