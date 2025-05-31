@@ -38,16 +38,16 @@ Avec une bonne gouvernance :
 C'est un outil qui permet de **créer et appliquer des règles** pour s'asssurer que ce qui est fait dans Azure **respectent les standards et conformités** de l'entreprise.
 
 Azure Policy permet de:              
-* auditer en temps réél la conformité des ressources par un contrôle de conformité en temps réel    
-* Bloquer le deploiement ou de deployer des actions correctrices    
+* auditer la conformité des ressources par un contrôle de conformité en temps réel    
+* Bloquer le deploiement ou deployer des actions correctrices    
 
 En cas de non conformité, la réaction d’Azure Policy dépend de l’effet que tu as défini dans la règle.          
 
 Voici les effets possibles👇      
-**Effet Deny (refus)**:	Bloque la création de ressources non conforme (=> pour forcer le respect strict de la règle)        
-**Effet Audit**:	Laisse passer la ressource non-conforme mais elle est signalée dans le rapport de conformité (=> savoir qui ne respecte pas la règle mais sans bloquer les utilisateurs).           
-**Append**:	corrige automatiquement les non-conformités en ajoutant un paramètre manquant dans la ressource.         
-**DeployIfNotExists**: corrige automatquement les non-conformités en déployant un correctif  / déploie une action corrective, par exemple un script.        
+* Effet Deny (refus):	Bloque la création de ressources non conforme (=> pour forcer le respect strict de la règle)        
+* Effet Audit:	Laisse passer la ressource non-conforme mais elle est signalée dans le rapport de conformité (=> savoir qui ne respecte pas la règle mais sans bloquer les utilisateurs).           
+* Append:	corrige automatiquement les non-conformités en ajoutant un paramètre manquant dans la ressource.         
+* DeployIfNotExists: corrige automatquement les non-conformités en déployant un correctif  / déploie une action corrective, par exemple un script.        
 
 📌 Exemples de politiques Azure :
 
