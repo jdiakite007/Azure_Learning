@@ -1,28 +1,26 @@
 **Azure Governance**
-Azure Governance – C’est quoi, en clair ?
-c’est l’ensemble des règles et outils qui t’aident à organiser, sécuriser et contrôler ce que les gens peuvent faire dans Azure, pour que **tout reste cohérent** et **conforme aux règles de ton entreprise**.
 
-La gouvernance Azure, c’est un ensemble de règles et d’outils qui te permettent de :
-✅ Organiser
-✅ Contrôler
-✅ Sécuriser
-✅ Surveiller
-...tes ressources cloud de **manière structurée** et **conforme aux règles de l’entreprise**.
+La gouvernance Azure, c’est un ensemble de règles et d’outils qui te permettent de :    
+✅ Organiser    
+✅ Contrôler     
+✅ Sécuriser     
+✅ Surveiller     
+...tes ressources cloud de **manière structurée** et **conforme aux règles de l’entreprise**.    
 
-C'est comme une charte de bonne conduite + boîte à outils pour que ton cloud soit organisé, sécurisé, et contrôlé.
+C'est comme une charte de bonne conduite + boîte à outils pour que ton cloud soit organisé, sécurisé, et contrôlé.   
 
-**Pourquoi c’est important** ?
-Sans gouvernance, on risque :
-Le chaos dans les ressources: chacun peut faire ce qu'il veut
-Du gaspillage de budget
-Des risques de sécurité
-Le non-respect des lois ou politiques internes
+**Pourquoi c’est important** ?   
+Sans gouvernance, on risque :    
+Le chaos dans les ressources: chacun peut faire ce qu'il veut    
+Du gaspillage de budget    
+Des risques de sécurité    
+Le non-respect des lois ou politiques internes    
 
 Avec une bonne gouvernance :
 ✅ Les règles sont claires
 ✅ Les accès sont bien gérés
 ✅ Les ressources sont bien utilisées
-✅ L’entreprise est conforme aux normes
+✅ L’entreprise est conforme aux normes      
 
 
 **Tableau des outils de gouvernance Azure**
@@ -32,16 +30,10 @@ Avec une bonne gouvernance :
 | RBAC (Role-Based Access Control)	   | Gérer qui peut faire quoi   | Un développeur peut lire une base mais pas la supprimer   |
 |Locks   |Bloquer les modifications ou suppressions   |Empêcher la suppression d’une ressource critique  |
 |Azure Advisor	  |Recommander des améliorations  |Suggère de supprimer une VM qui ne sert plus  |
+|Blueprints	  |Déployer des environnements prédéfinis  |Créer un environnement complet (réseau + règles + VMs) d’un coup |
 
 
 
-
-🛠️ Outil	                🎯 Rôle principal	               ✅ Exemple d’usage
-Azure Policy	Appliquer automatiquement des règles	Interdire le déploiement de VMs hors d'Europe
-RBAC (Role-Based Access Control)	Gérer qui peut faire quoi	Un développeur peut lire une base mais pas la supprimer
-Locks	Bloquer les modifications ou suppressions	Empêcher la suppression d’une ressource critique
-Blueprints	Déployer des environnements prédéfinis	Créer un environnement complet (réseau + règles + VMs) d’un coup
-Azure Advisor	Recommander des améliorations	Suggère de supprimer une VM qui ne sert plus
  **Les outils principaux de la gouvernance Azure :**
 
 1. **Azure Policy** 
@@ -70,12 +62,19 @@ Reader : lecture seule
 ⚠️ Important pour la séparation des responsabilités
 
 3. **Azure Locks (Verrous)**
+ 
 ReadOnly : interdit la modification ou suppression
 CanNotDelete : autorise la modification, interdit la suppression
 🧠 Exemple :
 Empêcher qu’un compte de stockage critique soit supprimé par erreur → appliquer un verrou CanNotDelete.
 
-4. **Azure Advisor** – Assistant de recommandation
+| Lock        |  Rôle principal                 |    Exemple    |
+|-----------------|----------------                 |----------------|
+|CanNotDelete  | autorise la modification, interdit la suppression  |Empêcher qu’un compte de stockage critique soit supprimé par erreur → appliquer un verrou Ca|
+| ReadOnly    | interdit la modification ou suppression   | Un développeur peut lire une base mais pas la supprimer   |
+
+
+5. **Azure Advisor** – Assistant de recommandation
 Azure Advisor analyse vos ressources et fournit des recommandations pour :Sécurité,Haute disponibilité,Performance, Cout
 Excellence opérationnelle
 
@@ -103,5 +102,14 @@ Un tag automatique appliqué
 💡 BluePrint = modèle de déploiement + conformité intégré
 Vous devez créer un environnement standardisé (avec un groupe de ressources, des rôles RBAC, et des stratégies). Quelle solution utiliser ?
 ✅ Réponse attendue : Azure Blueprints, qui permet de déployer tous ces éléments de façon cohérente.
+
+
+**Exemples concrets de gouvernance**
+Tu veux :
+Empêcher que des ressources soient supprimées accidentellement → Utilise Locks
+Créer un environnement “prêt à l’emploi” pour ton équipe projet → Utilise Blueprints
+Appliquer automatiquement les règles de sécurité et de conformité → Utilise Azure Policy
+Limiter ce que chaque utilisateur peut faire dans Azure → Utilise RBAC
+Améliorer la sécurité et les performances → Suis les conseils d’Azure Advisor
 
 
