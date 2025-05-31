@@ -88,7 +88,8 @@ Initiative = Un groupe de plusieurs politiques (ex : tout un pack de règles sé
 
 
 2. **Role-Based Access Control (RBAC)**
-Définir qui peut faire quoi sur quelles ressources Azure.
+Un outil pour gérer finement qui a accès à quelles ressources, et avec quel niveau de permissions.  
+
 🔐 Principe :
 Qui : un utilisateur, un groupe ou un service
 Quoi : action autorisée (lire, modifier, supprimer)
@@ -108,9 +109,9 @@ Reader : lecture seule
 | ReadOnly    | lecture mais pas modification ou suppression   | Un développeur peut lire une base mais pas la supprimer   |
 
 
-5. **Azure Advisor** 
-C'est un outils gratuit qui t’aide à **améliorer ton environnement Azure** 
-Il analyse automatiquement tes ressources et te donne des recommandations pour améliorer leur :   
+5. **Azure Advisor**
+Tu veux surveiller et améliorer ton environnement avec des recommandations automatiques pour la sécurité, la performance, le coût. Quel service utilises-tu 
+C'est un outils gratuit qui t’aide à  **surveiller et améliorer ton environnement Azure** avec des recommandantions pour:
 🔒 Sécurité  Ex: Activer Azure Defender, corriger des ports ouverts   
 ⚙️ Haute disponibilité    Ex: Des ressources ne sont pas redondées	 => Ajouter des groupes de disponibilité pour les VMs critiques
 ⚡ Performance   Ex: Passer une base de données lente sur un niveau supérieur
@@ -122,6 +123,7 @@ Il analyse automatiquement tes ressources et te donne des recommandations pour a
 5. **Azure Blueprints**
 Permet de déployer un ensemble complet de ressources + règles de gouvernance en un seul modèle.
 Créer un modèle prêt à l’emploi avec règles + ressources
+Tu veux standardiser le déploiement d’un environnement complet (réseau, VM, règles de sécurité, tags) pour chaque nouveau projet. 
 
 Contenu possible d’un Blueprint :
 Groupes de ressources
@@ -137,7 +139,8 @@ Un rôle Contributor attribué
 Un tag automatique appliqué
 
 💡 BluePrint = modèle de déploiement + conformité intégré
-Vous devez créer un environnement standardisé (avec un groupe de ressources, des rôles RBAC, et des stratégies). Quelle solution utiliser ?
+Vous devez créer un environnement standardisé (avec un groupe de ressources, des rôles RBAC, et des stratégies).
+Quelle solution utiliser ?
 ✅ Réponse attendue : Azure Blueprints, qui permet de déployer tous ces éléments de façon cohérente.
 
 
