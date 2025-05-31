@@ -94,7 +94,6 @@ C'est un outils gratuit qui t’aide à  **surveiller et améliorer ton environn
 🧰 Excellence opérationnelle   Ex: Mettre à jour les tags, organiser les ressources, planifier les sauvegardes
 
 
-
 5. **Azure Blueprints**
 Permet de déployer un ensemble complet de ressources + règles de gouvernance en un seul modèle.
 Créer un modèle prêt à l’emploi avec règles + ressources
