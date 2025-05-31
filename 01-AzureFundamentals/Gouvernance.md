@@ -22,7 +22,6 @@ Avec une bonne gouvernance :
 ✅ Les ressources sont bien utilisées      
 ✅ L’entreprise est conforme aux normes              
 
-
 **Tableau des outils de gouvernance Azure**
 |  Outil	        |  Rôle principal                 |    Exemple    |
 |-----------------|----------------                 |----------------|
